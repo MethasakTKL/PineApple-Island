@@ -10,7 +10,7 @@ import Grid from "@mui/material/Grid2";
 export default function Galleries() {
   return (
     <Box>
-      <Box sx={{ pt: 5, pb: 10 }}>
+      <Box sx={{ pt: 5, pb: 5 }}>
         <Typography
           variant="h4"
           sx={{
@@ -38,49 +38,49 @@ export default function Galleries() {
           margin={10}
           marginTop={5}
         >
-          <Grid size={{xs: 12, sm: 6, md: 4}}>
+          <Grid size={{ xs: 12, sm: 6, md: 4 }}>
             <Box
               component="img"
               src="/galleries/galleries_1.jpeg"
               sx={{ background: "#0d204e", width: "100%", height: 400 }}
             ></Box>
           </Grid>
-          <Grid size={{xs: 12, sm: 6, md: 4}}>
+          <Grid size={{ xs: 12, sm: 6, md: 4 }}>
             <Box
               component="img"
               src="/galleries/galleries_2.jpeg"
               sx={{ background: "#0d204e", width: "100%", height: 400 }}
             ></Box>
           </Grid>
-          <Grid size={{xs: 12, sm: 6, md: 4}}>
+          <Grid size={{ xs: 12, sm: 6, md: 4 }}>
             <Box
               component="img"
               src="/galleries/galleries_3.jpeg"
               sx={{ background: "#0d204e", width: "100%", height: 400 }}
             ></Box>
           </Grid>
-          <Grid size={{xs: 12, sm: 6, md: 4}}>
+          <Grid size={{ xs: 12, sm: 6, md: 4 }}>
             <Box
               component="img"
               src="/galleries/galleries_4.jpeg"
               sx={{ background: "#0d204e", width: "100%", height: 400 }}
             ></Box>
           </Grid>
-          <Grid size={{xs: 12, sm: 6, md: 4}}>
+          <Grid size={{ xs: 12, sm: 6, md: 4 }}>
             <Box
               component="img"
               src="/galleries/galleries_5.jpeg"
               sx={{ background: "#0d204e", width: "100%", height: 400 }}
             ></Box>
           </Grid>
-          <Grid size={{xs: 12, sm: 6, md: 4}}>
+          <Grid size={{ xs: 12, sm: 6, md: 4 }}>
             <Box
               component="img"
               src="/galleries/galleries_6.jpeg"
               sx={{ background: "#0d204e", width: "100%", height: 400 }}
             ></Box>
           </Grid>
-          <Grid size={{xs: 12, sm: 6, md: 4}}>
+          <Grid size={{ xs: 12, sm: 6, md: 4 }}>
             <Box
               component="img"
               src="/galleries/galleries_7.jpeg"
@@ -88,14 +88,14 @@ export default function Galleries() {
             ></Box>
           </Grid>
 
-          <Grid size={{xs: 12, sm: 6, md: 4}}>
+          <Grid size={{ xs: 12, sm: 6, md: 4 }}>
             <Box
               component="img"
               src="/galleries/galleries_8.jpeg"
               sx={{ background: "#0d204e", width: "100%", height: 400 }}
             ></Box>
           </Grid>
-          <Grid size={{xs: 12, sm: 6, md: 4}}>
+          <Grid size={{ xs: 12, sm: 6, md: 4 }}>
             <Box
               component="img"
               src="/galleries/galleries_9.jpeg"

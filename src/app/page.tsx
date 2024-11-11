@@ -9,6 +9,7 @@ import Footer from "./components/footer";
 import Galleries from "./components/galleries";
 import Offer from "./components/offer";
 import Reason from "./components/raeson";
+import AgentFeature from "./components/agentfeature";
 export default function Home() {
   return (
     <Box>
@@ -24,6 +25,9 @@ export default function Home() {
       </Grid>
       <Grid>
         <Galleries/>
+      </Grid>
+      <Grid>
+        <AgentFeature/>
       </Grid>
       <Grid>
         <ContactForm/>

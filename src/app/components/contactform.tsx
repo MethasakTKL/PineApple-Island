@@ -26,6 +26,19 @@ export default function ContactForm() {
           <TextField label="Message" id="fullWidth" sx={{ width: 600 }} />
         </Stack>
       </Grid>
+      <Grid container justifyContent={"center"} sx={{pt:2}}>
+        <Button
+          variant="contained"
+          disableElevation
+          sx={{ background: "#0E204E", borderRadius: 0, width: 100 }}
+        >
+          <Typography
+            sx={{ fontSize: 15, fontWeight: 100, textTransform: "none" }}
+          >
+            Send
+          </Typography>
+        </Button>
+      </Grid>
     </Box>
   );
 }
