@@ -6,24 +6,23 @@ export default function Offer() {
       <Box sx={{ pt: 5, pb: 10 }}>
         <Typography
           variant="h4"
-          sx={{ textAlign: "center", fontFamily: "Playfair Display",fontSize:48,fontWeight:'bold',color:'#0d204e'}}
+          sx={{
+            textAlign: "center",
+            fontFamily: "Playfair Display",
+            fontSize: 48,
+            fontWeight: "bold",
+            color: "#0d204e",
+          }}
         >
           What Pineapple Land Offers
         </Typography>
-        <Typography sx={{ textAlign: "center", pt: 1 }}>
-          a community that gives you a taste of happiness, a place you’ll love
-          to live and
-        </Typography>
-        <Typography sx={{ textAlign: "center" }}>
-          an opportunity to build a home.
-        </Typography>
-        <Grid container justifyContent={"center"}>
-          <Stack direction={"column"} spacing={1} paddingTop={3}>
-            <TextField label="Name" id="fullWidth" sx={{ width: 600 }} />
-            <TextField label="Phone No" id="fullWidth" sx={{ width: 600 }} />
-            <TextField label="Email" id="fullWidth" sx={{ width: 600 }} />
-            <TextField label="Message" id="fullWidth" sx={{ width: 600 }} />
-          </Stack>
+
+        <Grid container justifyContent={"center"} pt={10} sx={{justifyContent:'flex-start'}}>
+          <Box
+            component="img"
+            src="/galleries/galleries_2.jpeg"
+            sx={{ background: "#0d204e", width: 350, height: 350 }}
+          ></Box>
         </Grid>
       </Box>
     </Box>

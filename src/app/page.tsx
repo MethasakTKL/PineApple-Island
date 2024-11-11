@@ -8,12 +8,16 @@ import ContactForm from "./components/contactform";
 import Footer from "./components/footer";
 import Galleries from "./components/galleries";
 import Offer from "./components/offer";
+import Reason from "./components/raeson";
 export default function Home() {
   return (
     <Box>
       <NavBar />
       <Grid container sx={{ paddingTop: 10, justifyContent: "flex-end" }}>
         <WelSection />
+      </Grid>
+      <Grid>
+        <Reason/>
       </Grid>
       <Grid>
         <Offer/>

@@ -47,7 +47,7 @@ export default function NavBar() {
               sx={{
                 color: "black",
                 textTransform: "none",
-                fontFamily: "Manrope",
+                // fontFamily: "Manrope",
               }}
             >
               About Us
@@ -56,7 +56,7 @@ export default function NavBar() {
               sx={{
                 color: "black",
                 textTransform: "none",
-                fontFamily: "Manrope",
+                // fontFamily: "Manrope",
               }}
             >
               What we do
@@ -65,7 +65,7 @@ export default function NavBar() {
               sx={{
                 color: "black",
                 textTransform: "none",
-                fontFamily: "Manrope",
+                // fontFamily: "Manrope",
               }}
             >
               Project
