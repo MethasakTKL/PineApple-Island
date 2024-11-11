@@ -8,8 +8,9 @@ import ContactForm from "./components/contactform";
 import Footer from "./components/footer";
 import Galleries from "./components/galleries";
 import Offer from "./components/offer";
-import Reason from "./components/raeson";
+import Reason from "./components/reason";
 import AgentFeature from "./components/agentfeature";
+import About from "./components/about";
 export default function Home() {
   return (
     <Box>
@@ -18,24 +19,26 @@ export default function Home() {
         <WelSection />
       </Grid>
       <Grid>
-        <Reason/>
+        <About />
       </Grid>
       <Grid>
-        <Offer/>
+        <Reason />
       </Grid>
       <Grid>
-        <Galleries/>
+        <Offer />
       </Grid>
       <Grid>
-        <AgentFeature/>
+        <Galleries />
       </Grid>
       <Grid>
-        <ContactForm/>
+        <AgentFeature />
       </Grid>
       <Grid>
-        <Footer/>
+        <ContactForm />
       </Grid>
-
+      <Grid>
+        <Footer />
+      </Grid>
     </Box>
   );
 }

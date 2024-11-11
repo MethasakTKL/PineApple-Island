@@ -20,7 +20,7 @@ export default function WelSection() {
           position: "absolute",
           top: 200,
           left: 70,
-          borderRadius:0,
+          borderRadius: 0,
         }}
       >
         <Typography
