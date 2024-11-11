@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import styles from "./page.module.css";
 import { Box } from "@mui/material";
@@ -11,34 +12,92 @@ import Offer from "./components/offer";
 import Reason from "./components/reason";
 import AgentFeature from "./components/agentfeature";
 import About from "./components/about";
+
 export default function Home() {
   return (
     <Box>
       <NavBar />
-      <Grid container sx={{ paddingTop: 10, justifyContent: "flex-end" }}>
+      <Grid
+        container
+        sx={{
+          paddingTop: 10,
+          justifyContent: "center",
+          alignItems: "center",
+          flexDirection: "column",
+        }}
+      >
         <WelSection />
       </Grid>
-      <Grid>
+      {/* {/* <Grid
+        container
+        sx={{
+          justifyContent: "center",
+          alignItems: "center",
+          flexDirection: "column",
+        }}
+      >
         <About />
-      </Grid>
-      <Grid>
+      </Grid> */}
+      <Grid
+        container
+        sx={{
+          justifyContent: "center",
+          alignItems: "center",
+          flexDirection: "column",
+        }}
+      >
         <Reason />
       </Grid>
-      <Grid>
+      <Grid
+        container
+        sx={{
+          justifyContent: "center",
+          alignItems: "center",
+          flexDirection: "column",
+        }}
+      >
         <Offer />
       </Grid>
-      <Grid>
+      <Grid
+        container
+        sx={{
+          justifyContent: "center",
+          alignItems: "center",
+          flexDirection: "column",
+        }}
+      >
         <Galleries />
       </Grid>
-      <Grid>
+      <Grid
+        container
+        sx={{
+          justifyContent: "center",
+          alignItems: "center",
+          flexDirection: "column",
+        }}
+      >
         <AgentFeature />
       </Grid>
-      <Grid>
+      <Grid
+        container
+        sx={{
+          justifyContent: "center",
+          alignItems: "center",
+          flexDirection: "column",
+        }}
+      >
         <ContactForm />
       </Grid>
-      <Grid>
+      <Grid
+        container
+        sx={{
+          justifyContent: "center",
+          alignItems: "center",
+          flexDirection: "column",
+        }}
+      >
         <Footer />
-      </Grid>
+      </Grid> 
     </Box>
   );
 }

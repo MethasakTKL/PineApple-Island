@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import { Playfair_Display, Manrope } from "next/font/google";
+
 import "./globals.css";
 
 const geistSans = localFont({
@@ -7,10 +9,23 @@ const geistSans = localFont({
   variable: "--font-geist-sans",
   weight: "100 900",
 });
+
 const geistMono = localFont({
   src: "./fonts/GeistMonoVF.woff",
   variable: "--font-geist-mono",
   weight: "100 900",
+});
+
+const playfairDisplay = Playfair_Display({
+  weight: ["400", "600", "700"],
+  subsets: ["latin"],
+  variable: "--font-playfair-display",
+});
+
+const manrope = Manrope({
+  weight: ["200","400", "500", "600", "700"],
+  subsets: ["latin"],
+  variable: "--font-manrope",
 });
 
 export const metadata: Metadata = {
@@ -25,7 +40,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} ${playfairDisplay.variable} ${manrope.variable}`}
+      >
         {children}
       </body>
     </html>

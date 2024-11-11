@@ -2,12 +2,23 @@ import { Box, Paper, Typography } from "@mui/material";
 
 export default function WelSection() {
   return (
-    <Box sx={{ pt: 2, pb: 2 }}>
+    <Box
+      sx={{
+        pt: "1rem",
+        pb: "1rem",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        position: "relative",
+      }}
+    >
       <Box
         component="img"
         sx={{
           height: 720,
-          width: 1000,
+          width: "auto",
+          pl: "20rem",
+          clipPath: "polygon(50% 0%,100% 0%,100% 100%,80% 80%,0% 100%,0% 0%)",
         }}
         alt="The house from the offer."
         src="/asset_1.jpeg"
@@ -19,7 +30,7 @@ export default function WelSection() {
           background: "#0d204e",
           position: "absolute",
           top: 200,
-          left: 70,
+          right: "45rem",
           borderRadius: 0,
         }}
       >
@@ -41,7 +52,7 @@ export default function WelSection() {
             color: "white",
             fontSize: 15,
             fontWeight: 300,
-
+            fontFamily: "Manrope",
             pt: 1,
             pl: 5,
             pr: 5,

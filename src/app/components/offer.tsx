@@ -3,7 +3,7 @@ import Grid from "@mui/material/Grid2";
 export default function Offer() {
   return (
     <Box>
-      <Box sx={{ pt: 5, pb: 10 }}>
+      <Box sx={{ pt: "10rem", pb: 10 }}>
         <Typography
           variant="h4"
           sx={{

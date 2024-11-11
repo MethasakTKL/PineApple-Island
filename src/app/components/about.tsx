@@ -4,12 +4,11 @@ export default function About() {
   return (
     <Box
       sx={{
-        width: "100%",
-        height: 500,
-        marginBottom: 20,
+        pt: '1rem',
+        pb: '5rem',
       }}
     >
-      <Grid container sx={{ justifyContent: "flex-end", pr: 10, pt: 10 }}>
+      <Grid container sx={{ justifyContent: "flex-end", pl: '22rem', pt: 10 }}>
         <Paper
           elevation={6}
           sx={{

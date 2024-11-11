@@ -7,6 +7,7 @@ import {
   Typography,
 } from "@mui/material";
 import Grid from "@mui/material/Grid2";
+
 export default function Galleries() {
   return (
     <Box>
@@ -23,13 +24,11 @@ export default function Galleries() {
         >
           Galleries
         </Typography>
-        <Typography sx={{ textAlign: "center", pt: 1 }}>
+        <Typography sx={{ textAlign: "center", pt: 1, fontFamily: "Manrope" }}>
           a community that gives you a taste of happiness, a place you’ll love
-          to live and
+          to live and an opportunity to build a home.
         </Typography>
-        <Typography sx={{ textAlign: "center" }}>
-          an opportunity to build a home.
-        </Typography>
+
         <Grid
           container
           justifyContent={"center"}
@@ -38,70 +37,16 @@ export default function Galleries() {
           margin={10}
           marginTop={5}
         >
-          <Grid size={{ xs: 12, sm: 6, md: 4 }}>
-            <Box
-              component="img"
-              src="/galleries/galleries_1.jpeg"
-              sx={{ background: "#0d204e", width: "100%", height: 400 }}
-            ></Box>
-          </Grid>
-          <Grid size={{ xs: 12, sm: 6, md: 4 }}>
-            <Box
-              component="img"
-              src="/galleries/galleries_2.jpeg"
-              sx={{ background: "#0d204e", width: "100%", height: 400 }}
-            ></Box>
-          </Grid>
-          <Grid size={{ xs: 12, sm: 6, md: 4 }}>
-            <Box
-              component="img"
-              src="/galleries/galleries_3.jpeg"
-              sx={{ background: "#0d204e", width: "100%", height: 400 }}
-            ></Box>
-          </Grid>
-          <Grid size={{ xs: 12, sm: 6, md: 4 }}>
-            <Box
-              component="img"
-              src="/galleries/galleries_4.jpeg"
-              sx={{ background: "#0d204e", width: "100%", height: 400 }}
-            ></Box>
-          </Grid>
-          <Grid size={{ xs: 12, sm: 6, md: 4 }}>
-            <Box
-              component="img"
-              src="/galleries/galleries_5.jpeg"
-              sx={{ background: "#0d204e", width: "100%", height: 400 }}
-            ></Box>
-          </Grid>
-          <Grid size={{ xs: 12, sm: 6, md: 4 }}>
-            <Box
-              component="img"
-              src="/galleries/galleries_6.jpeg"
-              sx={{ background: "#0d204e", width: "100%", height: 400 }}
-            ></Box>
-          </Grid>
-          <Grid size={{ xs: 12, sm: 6, md: 4 }}>
-            <Box
-              component="img"
-              src="/galleries/galleries_7.jpeg"
-              sx={{ background: "#0d204e", width: "100%", height: 400 }}
-            ></Box>
-          </Grid>
 
-          <Grid size={{ xs: 12, sm: 6, md: 4 }}>
-            <Box
-              component="img"
-              src="/galleries/galleries_8.jpeg"
-              sx={{ background: "#0d204e", width: "100%", height: 400 }}
-            ></Box>
-          </Grid>
-          <Grid size={{ xs: 12, sm: 6, md: 4 }}>
-            <Box
-              component="img"
-              src="/galleries/galleries_9.jpeg"
-              sx={{ background: "#0d204e", width: "100%", height: 400 }}
-            ></Box>
-          </Grid>
+          {itemData.map((item, index) => (
+            <Grid key={index} size={{ xs: 12, sm: 6, md: 4 }}>
+              <Box
+                component="img"
+                src={item.img}
+                sx={{ background: "#0d204e", width: "100%", height: 400 }}
+              />
+            </Grid>
+          ))}
         </Grid>
       </Box>
     </Box>
