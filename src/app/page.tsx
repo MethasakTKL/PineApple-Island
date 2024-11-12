@@ -77,6 +77,7 @@ export default function Home() {
       >
         <AgentFeature />
       </Grid>
+   */}
       <Grid
         container
         sx={{
@@ -86,7 +87,7 @@ export default function Home() {
         }}
       >
         <ContactForm />
-      </Grid> */}
+      </Grid>
       <Grid
         container
         sx={{

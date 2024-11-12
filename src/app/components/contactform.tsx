@@ -2,7 +2,7 @@ import { Box, Button, Stack, TextField, Typography } from "@mui/material";
 import Grid from "@mui/material/Grid2";
 export default function ContactForm() {
   return (
-    <Box sx={{ pt: 5, pb: 20 }}>
+    <Box sx={{ pt: 5, pb: 10 }}>
       <Typography
         variant="h4"
         sx={{
@@ -20,13 +20,29 @@ export default function ContactForm() {
       </Typography>
       <Grid container justifyContent={"center"}>
         <Stack direction={"column"} spacing={1} paddingTop={3}>
-          <TextField label="Name" id="fullWidth" sx={{ width: 600 }} />
-          <TextField label="Phone No" id="fullWidth" sx={{ width: 600 }} />
-          <TextField label="Email" id="fullWidth" sx={{ width: 600 }} />
-          <TextField label="Message" id="fullWidth" sx={{ width: 600 }} />
+          <TextField
+            label="Name"
+            id="fullWidth"
+            sx={{ width: "auto", minWidth: 300 }}
+          />
+          <TextField
+            label="Phone No"
+            id="fullWidth"
+            sx={{ width: "auto", minWidth: 300 }}
+          />
+          <TextField
+            label="Email"
+            id="fullWidth"
+            sx={{ width: "auto", minWidth: 300 }}
+          />
+          <TextField
+            label="Message"
+            id="fullWidth"
+            sx={{ width: "auto", minWidth: 300 }}
+          />
         </Stack>
       </Grid>
-      <Grid container justifyContent={"center"} sx={{pt:2}}>
+      <Grid container justifyContent={"center"} sx={{ pt: 2 }}>
         <Button
           variant="contained"
           disableElevation

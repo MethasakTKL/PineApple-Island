@@ -61,7 +61,7 @@ export default function Footer() {
       <Box
         sx={{
           background: "#0d204e",
-          height: 100,
+          height: 150,
           display: {
             xs: "flex",
             md: "none",
@@ -69,7 +69,7 @@ export default function Footer() {
           justifyContent: "center",
         }}
       >
-        <Grid container spacing={2} sx={{ pt: "1rem"  ,textAlign: "center",}}>
+        <Grid container spacing={2} sx={{ pt: "2.5rem"  ,textAlign: "center",}}>
           <Grid>
             <Stack width={"400px"}>
               <Typography
