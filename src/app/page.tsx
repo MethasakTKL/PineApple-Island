@@ -3,7 +3,7 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import { Box } from "@mui/material";
 import NavBar from "./components/navbar";
-import WelSection from "./components/welcome_section";
+import Intro from "./components/intro";
 import Grid from "@mui/material/Grid2";
 import ContactForm from "./components/contactform";
 import Footer from "./components/footer";
@@ -23,10 +23,9 @@ export default function Home() {
           paddingTop: 10,
           justifyContent: "center",
           alignItems: "center",
-          flexDirection: "column",
         }}
       >
-        <WelSection />
+        <Intro />
       </Grid>
       {/* {/* <Grid
         container
@@ -38,7 +37,7 @@ export default function Home() {
       >
         <About />
       </Grid> */}
-      <Grid
+      {/* <Grid
         container
         sx={{
           justifyContent: "center",
@@ -97,7 +96,7 @@ export default function Home() {
         }}
       >
         <Footer />
-      </Grid> 
+      </Grid>  */}
     </Box>
   );
 }

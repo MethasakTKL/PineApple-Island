@@ -32,7 +32,6 @@ export default function NavBar() {
           sx={{
             display: "flex",
             justifyContent: "space-between",
-            flexWrap: "wrap",
             padding: { xs: "16px", md: "0 24px" },
           }}
         >
