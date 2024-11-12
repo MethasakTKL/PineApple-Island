@@ -37,6 +37,29 @@ export default function Home() {
       >
         <About />
       </Grid>
+
+      <Grid
+        container
+        sx={{
+          justifyContent: "center",
+          alignItems: "center",
+          flexDirection: "column",
+        }}
+      >
+        <Offer />
+      </Grid>
+
+      <Grid
+        container
+        sx={{
+          justifyContent: "center",
+          alignItems: "center",
+          flexDirection: "column",
+        }}
+      >
+        <AgentFeature />
+      </Grid>
+   */}
       <Grid
         container
         sx={{
@@ -55,29 +78,8 @@ export default function Home() {
           flexDirection: "column",
         }}
       >
-        <Offer />
-      </Grid>
-      <Grid
-        container
-        sx={{
-          justifyContent: "center",
-          alignItems: "center",
-          flexDirection: "column",
-        }}
-      >
         <Galleries />
       </Grid>
-      <Grid
-        container
-        sx={{
-          justifyContent: "center",
-          alignItems: "center",
-          flexDirection: "column",
-        }}
-      >
-        <AgentFeature />
-      </Grid>
-   */}
       <Grid
         container
         sx={{
