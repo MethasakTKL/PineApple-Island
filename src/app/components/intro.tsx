@@ -20,6 +20,8 @@ export default function Intro() {
           sx={{
             height: 720,
             width: "auto",
+            maxWidth: {md:"120rem",lg:"120rem"},
+            minWidth:  {md:"30rem",lg:"75rem"},
             pl: "20rem",
             clipPath: "polygon(50% 0%,100% 0%,100% 100%,80% 80%,0% 100%,0% 0%)",
           }}
@@ -33,7 +35,7 @@ export default function Intro() {
             background: "#0d204e",
             position: "absolute",
             top: 200,
-            right: "50rem",
+            left: {md:"1rem",lg:"1rem"},
             borderRadius: 0,
           }}
         >

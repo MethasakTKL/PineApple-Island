@@ -21,8 +21,8 @@ export default function Home() {
         container
         sx={{
           paddingTop: 10,
-          justifyContent: "center",
-          alignItems: "center",
+          justifyContent: "flex-end",
+          alignItems: "flex-end",
         }}
       >
         <Intro />
@@ -49,17 +49,17 @@ export default function Home() {
         <Offer />
       </Grid>
 
-      <Grid
+   */}
+      {/* <Grid
         container
         sx={{
-          justifyContent: "center",
-          alignItems: "center",
+          justifyContent: "flex-start",
+          alignItems: "flex-start",
           flexDirection: "column",
         }}
       >
         <AgentFeature />
-      </Grid>
-   */}
+      </Grid> */}
       <Grid
         container
         sx={{

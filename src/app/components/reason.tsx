@@ -22,63 +22,78 @@ export default function Reason() {
                 sx={{
                   justifyContent: "center",
                   background: "#0d204e",
-                  width: "100rem",
+                  width: {md:"80rem",lg:"120rem"},
                   height: "32rem",
                   clipPath:
                     "polygon(50% 0%,100% 0%,100% 100%,80% 80%,0% 100%,0% 0%)",
                 }}
               ></Box>
             </Grid>
-
-            <Paper
-              elevation={6}
-              sx={{
-                position: "absolute",
-                background: "white",
-                width: 850,
-                height: 450,
-                marginLeft: "15rem",
-                marginTop: "7rem",
-                borderRadius: 0,
-              }}
-            >
-              <Grid container>
-                <Grid>
-                  <Box sx={{ width: 375, height: 450 }}>
-                    <Typography
-                      margin={10}
-                      sx={{ color: "#0E204E", fontFamily: "Manrope" }}
-                    >
-                      Pineapple Island is the most sought-after community in
-                      Ibadan that values and puts the needs of their clients
-                      first. It is a territory with loft complexes that creates
-                      a country life and homely feeling that is integrated with
-                      industrial development. A perfect, professional built
-                      abode that gives you the true taste of beauty and
-                      happiness.
-                    </Typography>
-                  </Box>
-                </Grid>
-                <Grid>
-                  <Box
-                    component="img"
-                    src="/asset_3.jpeg"
-                    sx={{
-                      background: "#f2cf45",
-                      width: 475,
-                      height: 450,
-                    }}
-                  ></Box>
-                </Grid>
+            <Grid container sx={{ position: "absolute", width: "100rem" }}>
+              <Grid size={12}>
+                <Paper
+                  elevation={6}
+                  sx={{
+                    background: "white",
+                    width: {
+                      md: 400,
+                      lg: 850,
+                    },
+                    height: 450,
+                    marginLeft: {md:"40rem",lg:"30rem"},
+                    marginTop: "7rem",
+                    borderRadius: 0,
+                  }}
+                >
+                  <Grid container>
+                    <Grid>
+                      <Box sx={{ width: 375, height: 450 }}>
+                        <Typography
+                          margin={10}
+                          sx={{ color: "#0E204E", fontFamily: "Manrope" }}
+                        >
+                          Pineapple Island is the most sought-after community in
+                          Ibadan that values and puts the needs of their clients
+                          first. It is a territory with loft complexes that
+                          creates a country life and homely feeling that is
+                          integrated with industrial development. A perfect,
+                          professional built abode that gives you the true taste
+                          of beauty and happiness.
+                        </Typography>
+                      </Box>
+                    </Grid>
+                    <Grid>
+                      <Box
+                        sx={{
+                          background: "#f2cf45",
+                          width: 475,
+                          height: 450,
+                          display: {
+                            md: "none",
+                            lg:"flex"
+                          },
+                        }}
+                      >
+                        <img
+                          src="/asset_3.jpeg"
+                          width="100%"
+                          height="100%"
+                          className="box1"
+                        />
+                      </Box>
+                    </Grid>
+                  </Grid>
+                </Paper>
               </Grid>
-            </Paper>
+            </Grid>
+
             <Box
               position="absolute"
               sx={{
                 width: 200,
                 height: 250,
-                marginRight: "65rem",
-                marginTop: "11rem",
+                marginRight: {md:"50rem",lg:"70rem"},
+                marginTop: "10rem",
               }}
             >
               <Typography
@@ -117,9 +132,8 @@ export default function Reason() {
                 md: "none",
               },
               justifyContent: "center",
-              pb:"30rem",
-              pt:"10rem"
-
+              pb: "35rem",
+              pt: "10rem",
             }}
           >
             <Grid container spacing={2} sx={{ textAlign: "center" }}>
@@ -146,8 +160,7 @@ export default function Reason() {
                   A perfect, professional built abode that gives you the true
                   taste of beauty and happiness.
                 </Typography>
-              </Grid>
-              <Box>
+                <Box>
                 <img
                   src="/asset_3.jpeg"
                   width="95%"
@@ -155,6 +168,8 @@ export default function Reason() {
                   className="box1"
                 />
               </Box>
+              </Grid>
+     
             </Grid>
           </Box>
         </Grid>
