@@ -27,7 +27,7 @@ export default function Home() {
       >
         <Intro />
       </Grid>
-      {/* {/* <Grid
+      {/* <Grid
         container
         sx={{
           justifyContent: "center",
@@ -36,8 +36,8 @@ export default function Home() {
         }}
       >
         <About />
-      </Grid> */}
-      {/* <Grid
+      </Grid>
+      <Grid
         container
         sx={{
           justifyContent: "center",
@@ -86,7 +86,7 @@ export default function Home() {
         }}
       >
         <ContactForm />
-      </Grid>
+      </Grid> */}
       <Grid
         container
         sx={{
@@ -96,7 +96,7 @@ export default function Home() {
         }}
       >
         <Footer />
-      </Grid>  */}
+      </Grid>
     </Box>
   );
 }
