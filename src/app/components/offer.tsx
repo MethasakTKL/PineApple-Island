@@ -8,6 +8,8 @@ import {
 } from "@mui/icons-material";
 import { Box, Icon, Paper, Stack, TextField, Typography } from "@mui/material";
 import Grid from "@mui/material/Grid2";
+import Ecofriendly from  "../../../public/icon_offer/fluent_tree-evergreen-20-regular.svg";
+
 export default function Offer() {
   return (
     <Box>

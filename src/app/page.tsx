@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import styles from "./page.module.css";
-import { Box } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import NavBar from "./components/navbar";
 import Intro from "./components/intro";
 import Grid from "@mui/material/Grid2";
@@ -20,28 +20,33 @@ export default function Home() {
       <Grid
         container
         sx={{
-          paddingTop: 10,
-          justifyContent: "flex-end",
-          alignItems: "flex-end",
+          flexGlow: 1,
+          justifyContent: "center",
+          alignItems: "center",
         }}
       >
-        <Intro />
+        <Grid
+          size={12}
+          sx={{
+            paddingTop: 10,
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <Intro />
+        </Grid>
+        <Grid
+          size={12}
+          sx={{
+            paddingTop: 10,
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <About />
+        </Grid>
       </Grid>
-      {/* 
-
-     
-
-   */}
-      {/* <Grid
-        container
-        sx={{
-          justifyContent: "flex-start",
-          alignItems: "flex-start",
-          flexDirection: "column",
-        }}
-      >
-        <AgentFeature />
-      </Grid> */}
+{/* 
       <Grid
         container
         sx={{
@@ -90,6 +95,16 @@ export default function Home() {
           flexDirection: "column",
         }}
       >
+        <AgentFeature />
+      </Grid>
+      <Grid
+        container
+        sx={{
+          justifyContent: "center",
+          alignItems: "center",
+          flexDirection: "column",
+        }}
+      >
         <ContactForm />
       </Grid>
       <Grid
@@ -101,7 +116,7 @@ export default function Home() {
         }}
       >
         <Footer />
-      </Grid>
+      </Grid> */}
     </Box>
   );
 }
