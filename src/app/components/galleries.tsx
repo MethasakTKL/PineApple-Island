@@ -66,7 +66,6 @@ export default function Galleries() {
           rowSpacing={0.5}
           columnSpacing={{ xs: 1, sm: 2, md: 4 }}
           margin={0.5}
-          marginTop={5}
           sx={{
             display: {
               xs: "flex",

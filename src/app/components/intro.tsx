@@ -101,7 +101,7 @@ export default function Intro() {
             sx={{
               position: "absolute",
               color: "white",
-              fontSize: 25,
+              fontSize: "22pt",
               fontFamily: "Playfair Display",
               fontWeight: 600,
               textAlign: "center",
@@ -110,6 +110,7 @@ export default function Intro() {
               transform: "translateX(-50%)",
 
               pt: "10rem",
+              pb:"2rem",
               pl: "1rem",
               pr: "1rem",
             }}
@@ -130,7 +131,7 @@ export default function Intro() {
               left: "50%",
               transform: "translateX(-50%)",
 
-              pt: "17rem",
+              pt: "20rem",
               pl: "2rem",
               pr: "2rem",
             }}
@@ -144,7 +145,7 @@ export default function Intro() {
             sx={{
               position: "absolute",
               background: "white",
-              top: "25rem",
+              top: "30rem",
               left: "50%",
               transform: "translateX(-50%)",
             }}

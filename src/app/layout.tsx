@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import { Playfair_Display, Manrope, Lato } from "next/font/google";
+import { Playfair_Display, Manrope, Lato,Poppins } from "next/font/google";
 
 import "./globals.css";
 
@@ -32,6 +32,11 @@ const lato = Lato({
   weight: ["100", "300", "400", "700", "900"],
   subsets: ["latin"],
   variable: "--font-lato",
+});
+const poppins = Poppins({
+  weight: ["100", "300", "400", "700", "900"],
+  subsets: ["latin"],
+  variable: "--font-poppins",
 });
 
 export const metadata: Metadata = {

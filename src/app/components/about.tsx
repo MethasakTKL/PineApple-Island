@@ -41,7 +41,11 @@ export default function About() {
               <Box sx={{ width: 375, height: 450 }}>
                 <Typography
                   margin={10}
-                  sx={{ color: "white", fontFamily: "Manrope",fontWeight:300 }}
+                  sx={{
+                    color: "white",
+                    fontFamily: "Manrope",
+                    fontWeight: 300,
+                  }}
                 >
                   Pineapple Island is the most sought-after community in Ibadan
                   that values and puts the needs of their clients first. It is a
@@ -105,7 +109,7 @@ export default function About() {
                 pt: "1rem",
                 pl: "100%",
                 pr: "1rem",
-                pb: "2rem"
+                pb: "2rem",
               }}
             >
               About <br />
@@ -123,7 +127,7 @@ export default function About() {
                 sx={{
                   display: "flex",
                   width: "100%",
-                  height: 350,
+                  height: {xs:350,sm:300},
                   position: "absolute",
                   background: "black",
                   opacity: 0.6,
@@ -155,10 +159,10 @@ export default function About() {
                 of beauty and happiness.
               </Typography>
 
-              <img
+              <Box
+                component="img"
                 src="/asset_2.jpeg"
-                width="100%"
-                height="350"
+                sx={{ width: "100%", height: {xs:350,sm:300} }}
                 className="box1"
               />
             </Box>

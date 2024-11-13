@@ -133,7 +133,7 @@ export default function Reason() {
                 md: "none",
               },
               justifyContent: "center",
-              pb: "35rem",
+              pb: "30rem",
               pt: "10rem",
             }}
           >

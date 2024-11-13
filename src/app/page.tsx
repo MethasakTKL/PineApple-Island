@@ -29,16 +29,7 @@ export default function Home() {
       </Grid>
       {/* 
 
-      <Grid
-        container
-        sx={{
-          justifyContent: "center",
-          alignItems: "center",
-          flexDirection: "column",
-        }}
-      >
-        <Offer />
-      </Grid>
+     
 
    */}
       {/* <Grid
@@ -70,6 +61,16 @@ export default function Home() {
         }}
       >
         <Reason />
+      </Grid>
+      <Grid
+        container
+        sx={{
+          justifyContent: "center",
+          alignItems: "center",
+          flexDirection: "column",
+        }}
+      >
+        <Offer />
       </Grid>
       <Grid
         container
