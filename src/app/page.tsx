@@ -27,16 +27,7 @@ export default function Home() {
       >
         <Intro />
       </Grid>
-      {/* <Grid
-        container
-        sx={{
-          justifyContent: "center",
-          alignItems: "center",
-          flexDirection: "column",
-        }}
-      >
-        <About />
-      </Grid>
+      {/* 
 
       <Grid
         container
@@ -60,6 +51,16 @@ export default function Home() {
       >
         <AgentFeature />
       </Grid> */}
+      <Grid
+        container
+        sx={{
+          justifyContent: "center",
+          alignItems: "center",
+          flexDirection: "column",
+        }}
+      >
+        <About />
+      </Grid>
       <Grid
         container
         sx={{

@@ -18,11 +18,9 @@ export default function Intro() {
       >
         <Box
           sx={{
-            height: 720,
-            width: "auto",
-            maxWidth: {md:"120rem",lg:"120rem"},
-            minWidth:  {md:"30rem",lg:"75rem"},
-            pl: "20rem",
+            height: 700,
+            width:  {md:"50rem",lg:"60rem",xl:"70rem"},
+            pl: "12rem",
             clipPath: "polygon(50% 0%,100% 0%,100% 100%,80% 80%,0% 100%,0% 0%)",
           }}
         >
@@ -35,7 +33,7 @@ export default function Intro() {
             background: "#0d204e",
             position: "absolute",
             top: 200,
-            left: {md:"1rem",lg:"1rem"},
+            right: {md:"30rem",lg:"45rem",xl:"60rem"},
             borderRadius: 0,
           }}
         >

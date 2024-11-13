@@ -73,12 +73,12 @@ export default function Footer() {
           <Grid>
             <Stack width={"400px"}>
               <Typography
-                sx={{ color: "white", fontSize: 25, fontFamily: "Manrope" }}
+                sx={{ color: "white", fontSize: 22, fontWeight:300,fontFamily: "Manrope" }}
               >
                 Pineapple Island
               </Typography>
               <Typography
-                sx={{ color: "white", fontSize: 15,fontWeight:300, fontFamily: "Manrope" }}
+                sx={{ color: "white", fontSize: 13,fontWeight:300, fontFamily: "Manrope" }}
               >
                 &#169; Copyright 2021 Glowdsgn All Rights Reserved
               </Typography>

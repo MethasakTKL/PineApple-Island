@@ -23,22 +23,19 @@ export default function ContactForm() {
           <TextField
             label="Name"
             id="fullWidth"
-            sx={{ width: "auto", minWidth: 300 }}
+            sx={{ width: {xs:'22rem',lg:"40rem"} }}
           />
           <TextField
             label="Phone No"
             id="fullWidth"
-            sx={{ width: "auto", minWidth: 300 }}
           />
           <TextField
             label="Email"
             id="fullWidth"
-            sx={{ width: "auto", minWidth: 300 }}
           />
           <TextField
             label="Message"
             id="fullWidth"
-            sx={{ width: "auto", minWidth: 300 }}
           />
         </Stack>
       </Grid>

@@ -22,7 +22,7 @@ export default function Reason() {
                 sx={{
                   justifyContent: "center",
                   background: "#0d204e",
-                  width: {md:"80rem",lg:"120rem"},
+                  width: {md:"80rem",lg:"100rem",xl:"120rem"},
                   height: "32rem",
                   clipPath:
                     "polygon(50% 0%,100% 0%,100% 100%,80% 80%,0% 100%,0% 0%)",
@@ -38,6 +38,7 @@ export default function Reason() {
                     width: {
                       md: 400,
                       lg: 850,
+                      
                     },
                     height: 450,
                     marginLeft: {md:"40rem",lg:"30rem"},
