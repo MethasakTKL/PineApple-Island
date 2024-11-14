@@ -1,12 +1,5 @@
-import {
-  EmojiObjectsOutlined,
-  HttpsOutlined,
-  ParkOutlined,
-  PaymentsOutlined,
-  SettingsSuggestOutlined,
-  WifiOutlined,
-} from "@mui/icons-material";
-import { Box, Icon, Paper, Stack, TextField, Typography } from "@mui/material";
+
+import { Box,Typography } from "@mui/material";
 import Grid from "@mui/material/Grid2";
 
 export default function Offer() {

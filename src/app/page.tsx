@@ -1,16 +1,14 @@
 "use client";
-import Image from "next/image";
-import styles from "./page.module.css";
-import { Box, Typography } from "@mui/material";
+import { Box} from "@mui/material";
 import NavBar from "./components/navbar";
 import Intro from "./components/intro";
 import Grid from "@mui/material/Grid2";
-import ContactForm from "./components/contactform";
+import StayInTouch from "./components/stay_in_touch";
 import Footer from "./components/footer";
 import Galleries from "./components/galleries";
 import Offer from "./components/offer";
 import Reason from "./components/reason";
-import AgentFeature from "./components/agentfeature";
+import FeatureAgent from "./components/feature_agent";
 import About from "./components/about";
 
 export default function Home() {
@@ -49,7 +47,7 @@ export default function Home() {
           size={12}
           sx={{
             paddingTop: "2rem",
-            paddingBottom:"2rem",
+            paddingBottom: "2rem",
             justifyContent: "center",
             alignItems: "center",
           }}
@@ -87,7 +85,7 @@ export default function Home() {
             alignItems: "center",
           }}
         >
-          <AgentFeature />
+          <FeatureAgent />
         </Grid>
         <Grid
           size={12}
@@ -98,7 +96,7 @@ export default function Home() {
             alignItems: "center",
           }}
         >
-          <ContactForm />
+          <StayInTouch />
         </Grid>
         <Grid
           size={12}

@@ -1,6 +1,6 @@
 import { Box, Button, Stack, TextField, Typography } from "@mui/material";
 import Grid from "@mui/material/Grid2";
-export default function ContactForm() {
+export default function StayInTouch() {
   return (
     <Box sx={{ pt: 5, pb: 10 }}>
       <Typography
