@@ -32,7 +32,7 @@ export default function Intro() {
               height="720"
               className="box1"
             />
-          </Box>{" "}
+          </Box>
         </Grid>
 
         <Paper
@@ -128,7 +128,7 @@ export default function Intro() {
               <Typography
                 sx={{
                   color: "white",
-                  fontSize: { xs: "18pt", sm: "27pt" },
+                  fontSize: { xs: "25pt", sm: "27pt" },
                   fontFamily: "Playfair Display",
                   fontWeight: 600,
                   textAlign: "center",
@@ -174,7 +174,7 @@ export default function Intro() {
                 >
                   <Typography
                     sx={{
-                      fontSize: "10pt",
+                      fontSize: "12pt",
                       fontFamily: "Lato",
                       color: "#0d204e",
                     }}

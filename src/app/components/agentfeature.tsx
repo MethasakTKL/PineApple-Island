@@ -26,26 +26,32 @@ export default function AgentFeature() {
     <Box>
       <Box
         sx={{
-          pb: "20rem",
+          pb: "10rem",
           display: { xs: "none", md: "block", lg: "block" },
         }}
       >
         <Grid
           container
-          spacing={2}
+          spacing={1}
           pt={10}
-          sx={{ justifyContent: "center", pl: "10rem" }}
+          sx={{ display: "flex", justifyContent: "center" }}
         >
-          <Grid size={6}>
+          <Grid
+            size={5}
+            sx={{
+              display: "flex",
+              justifyContent: "flex-start",
+              alignItems: "center",
+            }}
+          >
             <Box
               component="img"
               position="absolute"
               src="/asset_6.jpeg"
               sx={{
                 background: "#0d204e",
-                width: 400,
+                width: 370,
                 height: 550,
-                marginLeft: 0,
               }}
             />
             <Box
@@ -53,12 +59,11 @@ export default function AgentFeature() {
                 background: "#0d204e",
                 width: 350,
                 height: 350,
-                marginLeft: 30,
-                marginTop: 10,
+                pl: "20rem",
               }}
             />
           </Grid>
-          <Grid container size={6}>
+          <Grid container size={5}>
             <Grid
               size={12}
               sx={{
@@ -82,14 +87,14 @@ export default function AgentFeature() {
               <List
                 sx={{
                   width: "100%",
-                  maxWidth: 500,
+                  maxWidth: 400,
                 }}
               >
                 <ListItem
                   secondaryAction={<CheckBox sx={{ color: "#0d204e" }} />}
                   sx={{ bgcolor: "#cfd9d6", height: 30 }}
                 >
-                  <Typography sx={{ fontFamily: "Poppins", fontWeight: 300 }}>
+                  <Typography sx={{ fontFamily: "Poppins", fontWeight: 300,fontSize:"11pt" }}>
                     Lorem ipsum dolor sit amet, consectetur
                   </Typography>
                 </ListItem>
@@ -97,7 +102,7 @@ export default function AgentFeature() {
                   secondaryAction={<CheckBox sx={{ color: "#0d204e" }} />}
                   sx={{ bgcolor: "white", height: 50 }}
                 >
-                  <Typography sx={{ fontFamily: "Poppins", fontWeight: 300 }}>
+                  <Typography sx={{ fontFamily: "Poppins", fontWeight: 300,fontSize:"11pt" }}>
                     Lorem ipsum dolor sit amet, consectetur
                   </Typography>
                 </ListItem>
@@ -105,7 +110,7 @@ export default function AgentFeature() {
                   secondaryAction={<CheckBox sx={{ color: "#0d204e" }} />}
                   sx={{ bgcolor: "#cfd9d6", height: 30 }}
                 >
-                  <Typography sx={{ fontFamily: "Poppins", fontWeight: 300 }}>
+                  <Typography sx={{ fontFamily: "Poppins", fontWeight: 300,fontSize:"11pt" }}>
                     Lorem ipsum dolor sit amet, consectetur
                   </Typography>
                 </ListItem>
@@ -113,7 +118,7 @@ export default function AgentFeature() {
                   secondaryAction={<CheckBox sx={{ color: "#0d204e" }} />}
                   sx={{ bgcolor: "white", height: 50 }}
                 >
-                  <Typography sx={{ fontFamily: "Poppins", fontWeight: 300 }}>
+                  <Typography sx={{ fontFamily: "Poppins", fontWeight: 300 ,fontSize:"11pt"}}>
                     Lorem ipsum dolor sit amet, consectetur
                   </Typography>
                 </ListItem>{" "}
@@ -121,7 +126,7 @@ export default function AgentFeature() {
                   secondaryAction={<CheckBox sx={{ color: "#0d204e" }} />}
                   sx={{ bgcolor: "#cfd9d6", height: 30 }}
                 >
-                  <Typography sx={{ fontFamily: "Poppins", fontWeight: 300 }}>
+                  <Typography sx={{ fontFamily: "Poppins", fontWeight: 300 ,fontSize:"11pt"}}>
                     Lorem ipsum dolor sit amet, consectetur
                   </Typography>
                 </ListItem>
@@ -129,7 +134,7 @@ export default function AgentFeature() {
                   secondaryAction={<CheckBox sx={{ color: "#0d204e" }} />}
                   sx={{ bgcolor: "white", height: 50 }}
                 >
-                  <Typography sx={{ fontFamily: "Poppins", fontWeight: 300 }}>
+                  <Typography sx={{ fontFamily: "Poppins", fontWeight: 300,fontSize:"11pt" }}>
                     Lorem ipsum dolor sit amet, consectetur
                   </Typography>
                 </ListItem>{" "}
@@ -137,7 +142,7 @@ export default function AgentFeature() {
                   secondaryAction={<CheckBox sx={{ color: "#0d204e" }} />}
                   sx={{ bgcolor: "#cfd9d6", height: 30 }}
                 >
-                  <Typography sx={{ fontFamily: "Poppins", fontWeight: 300 }}>
+                  <Typography sx={{ fontFamily: "Poppins", fontWeight: 300,fontSize:"11pt" }}>
                     Lorem ipsum dolor sit amet, consectetur
                   </Typography>
                 </ListItem>
@@ -145,7 +150,7 @@ export default function AgentFeature() {
                   secondaryAction={<CheckBox sx={{ color: "#0d204e" }} />}
                   sx={{ bgcolor: "white", height: 50 }}
                 >
-                  <Typography sx={{ fontFamily: "Poppins", fontWeight: 300 }}>
+                  <Typography sx={{ fontFamily: "Poppins", fontWeight: 300,fontSize:"11pt" }}>
                     Lorem ipsum dolor sit amet, consectetur
                   </Typography>
                 </ListItem>{" "}
@@ -153,7 +158,7 @@ export default function AgentFeature() {
                   secondaryAction={<CheckBox sx={{ color: "#0d204e" }} />}
                   sx={{ bgcolor: "#cfd9d6", height: 30 }}
                 >
-                  <Typography sx={{ fontFamily: "Poppins", fontWeight: 300 }}>
+                  <Typography sx={{ fontFamily: "Poppins", fontWeight: 300,fontSize:"11pt" }}>
                     Lorem ipsum dolor sit amet, consectetur
                   </Typography>
                 </ListItem>
@@ -161,7 +166,7 @@ export default function AgentFeature() {
                   secondaryAction={<CheckBox sx={{ color: "#0d204e" }} />}
                   sx={{ bgcolor: "white", height: 50 }}
                 >
-                  <Typography sx={{ fontFamily: "Poppins", fontWeight: 300 }}>
+                  <Typography sx={{ fontFamily: "Poppins", fontWeight: 300,fontSize:"11pt" }}>
                     Lorem ipsum dolor sit amet, consectetur
                   </Typography>
                 </ListItem>
@@ -169,30 +174,46 @@ export default function AgentFeature() {
             </Grid>
           </Grid>
         </Grid>
-        <Grid container spacing={2} pt={15}>
-          <Grid container size={6} sx={{ pr: "0rem", pt: "5rem" }}>
-            <Grid size={12} sx={{ textAlign: "flex-start", pl: "15rem" }}>
+        <Grid
+          container
+          spacing={1}
+          pt={10}
+          sx={{ display: "flex", justifyContent: "center",alignItems: "center", mt:"10rem" }}
+        >
+          <Grid container size={5}>
+            <Grid
+              size={12}
+              sx={{
+                textAlign: "flex-start",
+                justifyContent: "flex-start",
+                alignItems: "center",
+              }}
+            >
               <Typography
+                align="left"
                 sx={{
                   fontSize: "38pt",
                   fontFamily: "Playfair Display",
                   fontWeight: 600,
-                  pb: "1.5rem",
+
                   color: "#0d204e",
-                  lineHeight: "4rem",
+                  lineHeight: "3rem",
+                  pl: "5rem",
+                  pb: "1.5rem",
                 }}
               >
-                Become an
-                <br />
-                Agent
+                Become <br />
+                an Agent
               </Typography>
               <Typography
                 sx={{
-                  fontSize: "15pt",
+                  fontSize: "12pt",
                   fontFamily: "Manrope",
                   fontWeight: 400,
-                  width: "55%",
                   pb: "1.5rem",
+                  color: "#0d204e",
+                  pl: "5rem",
+                  pr: "10rem",
                 }}
               >
                 a community that gives you a taste of happiness, a place you’ll
@@ -204,32 +225,38 @@ export default function AgentFeature() {
                 sx={{
                   background: "#0E204E",
                   borderRadius: 0,
-                  width: "12rem",
-                  height: "4rem",
+                  width: "10rem",
+                  ml: "5rem",
                 }}
               >
                 <Typography
                   sx={{
-                    fontSize: { xs: 14, md: 15 },
+                    fontSize: "13pt",
                     fontWeight: 100,
                     textTransform: "none",
                   }}
                 >
-                  Join Now
+                  Get in Touch
                 </Typography>
               </Button>
             </Grid>
           </Grid>
-          <Grid size={6}>
+          <Grid
+            size={5}
+            sx={{
+              display: "flex",
+              justifyContent: "flex-end",
+              alignItems: "center",
+            }}
+          >
             <Box
               component="img"
               position="absolute"
               src="/asset_7.jpeg"
               sx={{
                 background: "#0d204e",
-                width: 400,
+                width: 370,
                 height: 550,
-                marginLeft: 20,
               }}
             />
             <Box
@@ -237,13 +264,13 @@ export default function AgentFeature() {
                 background: "#0d204e",
                 width: 350,
                 height: 350,
-                marginLeft: 0,
-                marginTop: 10,
+                pl: "20rem",
               }}
             />
           </Grid>
         </Grid>
       </Box>
+      {/* //-------------------------------------------------------------------------- */}
       <Box
         sx={{
           background: "#0d204e",

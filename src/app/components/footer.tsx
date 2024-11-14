@@ -1,4 +1,14 @@
-import { Box, Stack, TextField, Typography } from "@mui/material";
+import {
+  Box,
+  Button,
+  FormControl,
+  InputAdornment,
+  InputLabel,
+  OutlinedInput,
+  Stack,
+  TextField,
+  Typography,
+} from "@mui/material";
 import Grid from "@mui/material/Grid2";
 export default function Footer() {
   return (
@@ -11,7 +21,7 @@ export default function Footer() {
         sx={{
           background: "#0d204e",
           height: 350,
-          clipPath: "polygon(20% 15%,100% 33%,100% 100%,0% 100%,0% 35%)",
+          clipPath: "polygon(10% 15%,100% 33%,100% 100%,0% 100%,0% 35%)",
           display: {
             xs: "none",
             md: "flex",
@@ -48,12 +58,22 @@ export default function Footer() {
                 Keep up with our newsletter to get updates about projects and
                 offers
               </Typography>
-              <TextField
-                id="filled-basic"
-                label="Email"
-                variant="filled"
-                sx={{ background: "white", width: 300, marginTop: 2 }}
-              />
+              <FormControl>
+                <OutlinedInput
+                  id="filled-basic"
+                  placeholder="Email"
+                  endAdornment={
+                    <InputAdornment position="end">
+                      <Button>
+                        <Typography sx={{ fontSize: "10pt", color: "grey" }}>
+                          Subscribe
+                        </Typography>
+                      </Button>
+                    </InputAdornment>
+                  }
+                  sx={{ background: "white", width: 300, marginTop: 2 ,borderRadius:0 }}
+                />
+              </FormControl>
             </Stack>
           </Grid>
         </Grid>
@@ -69,16 +89,26 @@ export default function Footer() {
           justifyContent: "center",
         }}
       >
-        <Grid container spacing={2} sx={{ pt: "2.5rem"  ,textAlign: "center",}}>
+        <Grid container spacing={2} sx={{ pt: "2.5rem", textAlign: "center" }}>
           <Grid>
             <Stack width={"400px"}>
               <Typography
-                sx={{ color: "white", fontSize: 22, fontWeight:300,fontFamily: "Manrope" }}
+                sx={{
+                  color: "white",
+                  fontSize: 22,
+                  fontWeight: 300,
+                  fontFamily: "Manrope",
+                }}
               >
                 Pineapple Island
               </Typography>
               <Typography
-                sx={{ color: "white", fontSize: 13,fontWeight:300, fontFamily: "Manrope" }}
+                sx={{
+                  color: "white",
+                  fontSize: 13,
+                  fontWeight: 300,
+                  fontFamily: "Manrope",
+                }}
               >
                 &#169; Copyright 2021 Glowdsgn All Rights Reserved
               </Typography>

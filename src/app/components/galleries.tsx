@@ -91,6 +91,8 @@ export default function Galleries() {
                 textAlign: "center",
                 pt: "1rem",
                 pb: "1rem",
+                pl:"3rem",
+                pr:"3rem",
                 fontFamily: "lato",
                 fontWeight: "300",
               }}

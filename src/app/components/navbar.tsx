@@ -2,18 +2,24 @@ import {
   AppBar,
   Box,
   Button,
+  Divider,
   Drawer,
   IconButton,
   List,
   ListItem,
   ListItemButton,
+  ListItemIcon,
+  ListItemIconProps,
+  ListItemText,
   Stack,
   Toolbar,
   Typography,
 } from "@mui/material";
 import { useState } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
-
+import VillaIcon from "@mui/icons-material/Villa";
+import RoofingIcon from "@mui/icons-material/Roofing";
+import BusinessIcon from "@mui/icons-material/Business";
 export default function NavBar() {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
@@ -26,44 +32,39 @@ export default function NavBar() {
       <AppBar
         position="fixed"
         elevation={0}
-        sx={{ background: "white", height: 80 }}
+        sx={{ background: "white", height: "auto", maxHeight: "100px" }}
       >
         <Toolbar
           sx={{
             display: "flex",
             justifyContent: "space-between",
-            padding: { xs: "16px", md: "0 24px" },
+            alignItems: "center",
+            marginLeft: { md: "1rem", lg: "2rem" },
+            marginRight: { md: "1rem", lg: "2rem" },
           }}
         >
-          <Stack direction={"column"}>
+          <Box
+            sx={{
+              justifyContent: "flex-start",
+              gap: 2,
+            }}
+          >
             <Typography
               variant="h6"
               component="div"
               sx={{
-                fontSize: { xs: 20, md: 27 },
+                fontSize: "18pt",
                 color: "#0E204E",
                 width: { xs: "auto", md: "250px" },
                 fontFamily: "Playfair Display",
                 fontWeight: "Bold",
+                lineHeight: "1",
               }}
             >
-              Pineapple
-            </Typography>
-            <Typography
-              variant="h6"
-              component="div"
-              sx={{
-                position: "absolute",
-                color: "#0E204E",
-                paddingTop: { xs: 2, md: 3.5 },
-                fontSize: { xs: 20, md: 27 },
-                fontFamily: "Playfair Display",
-                fontWeight: 600,
-              }}
-            >
+              Pineapple <br />
               Island
             </Typography>
-          </Stack>
+          </Box>
 
           <Box
             sx={{
@@ -73,8 +74,6 @@ export default function NavBar() {
               },
               justifyContent: "center",
               gap: 2,
-              flexGrow: 1,
-              padding: "0 24px",
             }}
           >
             <Button
@@ -82,6 +81,7 @@ export default function NavBar() {
                 color: "black",
                 textTransform: "none",
                 fontFamily: "Manrope",
+                fontSize: "13pt",
                 fontWeight: 400,
               }}
             >
@@ -92,6 +92,7 @@ export default function NavBar() {
                 color: "black",
                 textTransform: "none",
                 fontFamily: "Manrope",
+                fontSize: "13pt",
                 fontWeight: 400,
               }}
             >
@@ -102,6 +103,7 @@ export default function NavBar() {
                 color: "black",
                 textTransform: "none",
                 fontFamily: "Manrope",
+                fontSize: "13pt",
                 fontWeight: 400,
               }}
             >
@@ -120,35 +122,36 @@ export default function NavBar() {
               onClick={toggleDrawer}
               sx={{
                 display: {
-                  xs: "block",
+                  xs: "flex",
                   md: "none",
                 },
               }}
             >
-              <MenuIcon sx={{ color: "#0d204e" }} />
+              <MenuIcon sx={{ color: "#0d204e", fontSize: "20pt" }} />
             </IconButton>
             <Box
               sx={{
                 display: {
                   xs: "none",
-                  md: "block",
+                  md: "flex",
                 },
-                minWidth: { xs: "auto", md: "250px" },
+                justifyContent: "flex-end",
+                minWidth: "auto",
               }}
             >
               <Button
                 variant="contained"
                 disableElevation
-                sx={{ background: "#0E204E", borderRadius: 0 }}
+                sx={{ background: "#0E204E", borderRadius: 0, width: "10rem" }}
               >
                 <Typography
                   sx={{
-                    fontSize: { xs: 14, md: 15 },
+                    fontSize: "13pt",
                     fontWeight: 100,
                     textTransform: "none",
                   }}
                 >
-                  Get in touch
+                  Get in Touch
                 </Typography>
               </Button>
             </Box>
@@ -167,59 +170,58 @@ export default function NavBar() {
           },
         }}
       >
-        <List sx={{ width: "10rem" }}>
+        <Box
+          sx={{
+            justifyContent: "flex-start",
+            alignItems: "center",
+            gap: 2,
+            width: 250,
+            height: 80,
+            background: "#0E204E",
+          }}
+        >
+          <Typography
+            variant="h6"
+            component="div"
+            sx={{
+              fontSize: "18pt",
+              color: "white",
+              width: { xs: "auto", md: "250px" },
+              fontFamily: "Playfair Display",
+              fontWeight: "300",
+              lineHeight: "1",
+              pl: 2,
+              pt: 2,
+            }}
+          >
+            Pineapple <br />
+            Island
+          </Typography>
+        </Box>
+        <List sx={{ width: "auto" }}>
           <ListItem disablePadding>
-            <ListItemButton
-              sx={{
-                color: "black",
-                textTransform: "none",
-                fontFamily: "Manrope",
-                fontWeight: 400,
-              }}
-            >
-              About Us
+            <ListItemButton>
+              <ListItemIcon>
+                <BusinessIcon />
+              </ListItemIcon>
+              <ListItemText primary="About Us" />
             </ListItemButton>
           </ListItem>
           <ListItem disablePadding>
-            <ListItemButton
-              sx={{
-                color: "black",
-                textTransform: "none",
-                fontFamily: "Manrope",
-                fontWeight: 400,
-              }}
-            >
-              What we do
+            <ListItemButton>
+              <ListItemIcon>
+                <RoofingIcon />
+              </ListItemIcon>
+              <ListItemText primary="What we do" />
             </ListItemButton>
           </ListItem>
           <ListItem disablePadding>
-            <ListItemButton
-              sx={{
-                color: "black",
-                textTransform: "none",
-                fontFamily: "Manrope",
-                fontWeight: 400,
-              }}
-            >
-              Project
+            <ListItemButton>
+              <ListItemIcon>
+                <VillaIcon />
+              </ListItemIcon>
+              <ListItemText primary="Project" />
             </ListItemButton>
-          </ListItem>
-          <ListItem>
-            <Button
-              variant="contained"
-              disableElevation
-              sx={{ background: "#0E204E", borderRadius: 0 }}
-            >
-              <Typography
-                sx={{
-                  fontSize: { xs: 14, md: 15 },
-                  fontWeight: 100,
-                  textTransform: "none",
-                }}
-              >
-                Get in touch
-              </Typography>
-            </Button>
           </ListItem>
         </List>
       </Drawer>

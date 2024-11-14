@@ -8,7 +8,6 @@ import {
 } from "@mui/icons-material";
 import { Box, Icon, Paper, Stack, TextField, Typography } from "@mui/material";
 import Grid from "@mui/material/Grid2";
-import Ecofriendly from  "../../../public/icon_offer/fluent_tree-evergreen-20-regular.svg";
 
 export default function Offer() {
   return (
@@ -25,7 +24,7 @@ export default function Offer() {
           sx={{
             textAlign: "center",
             fontFamily: "Playfair Display",
-            fontSize: 48,
+            fontSize: "45pt",
             fontWeight: "bold",
             color: "#0d204e",
           }}
@@ -36,10 +35,16 @@ export default function Offer() {
         <Grid
           container
           spacing={2}
-          pt={10}
-          sx={{ justifyContent: "flex-start", pl: 10 }}
+          sx={{ justifyContent: "center", pt: "10rem", pb: "5rem" }}
         >
-          <Grid size={6} sx={{ pr: "15rem" }}>
+          <Grid
+            size={{ md: 5, lg: 4 }}
+            sx={{
+              display: "flex",
+              justifyContent: "flex-start",
+              alignItems: "center",
+            }}
+          >
             <Box
               component="img"
               position="absolute"
@@ -56,25 +61,33 @@ export default function Offer() {
                 background: "#0d204e",
                 width: 350,
                 height: 250,
-                marginLeft: 30,
-                marginTop: 10,
+                marginLeft: "15rem",
               }}
             />
           </Grid>
-          <Grid container size={6} sx={{ pl: "5rem", pt: "8rem" }}>
+          <Grid
+            container
+            size={{ md: 5, lg: 4 }}
+            spacing={2}
+            sx={{
+              display: "flex",
+              justifyContent: "flex-start",
+              alignItems: "center",
+            }}
+          >
             <Grid size={4} sx={{ textAlign: "center" }}>
-              <ParkOutlined
+              <Box
+                component="img"
+                src="/icon_offer/fluent_tree-evergreen-20-regular.svg"
                 sx={{
-                  fontSize: "5rem",
-                  fontFamily: "Poppins",
-                  fontWeight: 300,
-                  pb: "1.5rem",
-                  color: "#0d204e",
+                  width: "4rem",
+                  height: "4rem",
+                  pb: "0.5rem",
                 }}
               />
               <Typography
                 sx={{
-                  fontSize: "13pt",
+                  fontSize: "12pt",
                   fontFamily: "Poppins",
                   fontWeight: 300,
                 }}
@@ -83,18 +96,18 @@ export default function Offer() {
               </Typography>
             </Grid>
             <Grid size={4} sx={{ pl: "1rem", textAlign: "center" }}>
-              <WifiOutlined
+              <Box
+                component="img"
+                src="/icon_offer/ooui_network.svg"
                 sx={{
-                  fontSize: "5rem",
-                  fontFamily: "Poppins",
-                  fontWeight: 300,
-                  pb: "1.5rem",
-                  color: "#0d204e",
+                  width: "4rem",
+                  height: "4rem",
+                  pb: "0.5rem",
                 }}
               />
               <Typography
                 sx={{
-                  fontSize: "15pt",
+                  fontSize: "12pt",
                   fontFamily: "Poppins",
                   fontWeight: 300,
                 }}
@@ -103,18 +116,18 @@ export default function Offer() {
               </Typography>
             </Grid>
             <Grid size={4} sx={{ pl: "1rem", textAlign: "center" }}>
-              <PaymentsOutlined
+              <Box
+                component="img"
+                src="/icon_offer/ic_outline-payments.svg"
                 sx={{
-                  fontSize: "5rem",
-                  fontFamily: "Poppins",
-                  fontWeight: 300,
-                  pb: "1.5rem",
-                  color: "#0d204e",
+                  width: "4rem",
+                  height: "4rem",
+                  pb: "0.5rem",
                 }}
               />
               <Typography
                 sx={{
-                  fontSize: "15pt",
+                  fontSize: "12pt",
                   fontFamily: "Poppins",
                   fontWeight: 300,
                 }}
@@ -124,26 +137,29 @@ export default function Offer() {
             </Grid>
           </Grid>
         </Grid>
-        <Grid
-          container
-          spacing={2}
-          pt={10}
-          sx={{ justifyContent: "flex-start", pl: 10 }}
-        >
-          <Grid container size={6} sx={{ pr: "5rem", pt: "8rem" }}>
+        <Grid container spacing={2} pt={10} sx={{ justifyContent: "center" }}>
+          <Grid
+            container
+            size={{ md: 5, lg: 4 }}
+            sx={{
+              display: "flex",
+              justifyContent: "flex-start",
+              alignItems: "center",
+            }}
+          >
             <Grid size={4} sx={{ textAlign: "center" }}>
-              <SettingsSuggestOutlined
+              <Box
+                component="img"
+                src="/icon_offer/icons8_services.svg"
                 sx={{
-                  fontSize: "5rem",
-                  fontFamily: "Poppins",
-                  fontWeight: 300,
-                  pb: "1.5rem",
-                  color: "#0d204e",
+                  width: "4rem",
+                  height: "4rem",
+                  pb: "0.5rem",
                 }}
               />
               <Typography
                 sx={{
-                  fontSize: "13pt",
+                  fontSize: "12pt",
                   fontFamily: "Poppins",
                   fontWeight: 300,
                 }}
@@ -152,18 +168,18 @@ export default function Offer() {
               </Typography>
             </Grid>
             <Grid size={4} sx={{ pl: "1rem", textAlign: "center" }}>
-              <HttpsOutlined
+              <Box
+                component="img"
+                src="/icon_offer/bytesize_lock.svg"
                 sx={{
-                  fontSize: "5rem",
-                  fontFamily: "Poppins",
-                  fontWeight: 300,
-                  pb: "1.5rem",
-                  color: "#0d204e",
+                  width: "4rem",
+                  height: "4rem",
+                  pb: "0.5rem",
                 }}
               />
               <Typography
                 sx={{
-                  fontSize: "15pt",
+                  fontSize: "12pt",
                   fontFamily: "Poppins",
                   fontWeight: 300,
                 }}
@@ -172,18 +188,18 @@ export default function Offer() {
               </Typography>
             </Grid>
             <Grid size={4} sx={{ pl: "1rem", textAlign: "center" }}>
-              <EmojiObjectsOutlined
+              <Box
+                component="img"
+                src="/icon_offer/emojione-monotone_light-bulb.svg"
                 sx={{
-                  fontSize: "5rem",
-                  fontFamily: "Poppins",
-                  fontWeight: 300,
-                  pb: "1.5rem",
-                  color: "#0d204e",
+                  width: "4rem",
+                  height: "4rem",
+                  pb: "0.5rem",
                 }}
               />
               <Typography
                 sx={{
-                  fontSize: "15pt",
+                  fontSize: "12pt",
                   fontFamily: "Poppins",
                   fontWeight: 300,
                 }}
@@ -192,7 +208,14 @@ export default function Offer() {
               </Typography>
             </Grid>
           </Grid>
-          <Grid size={6} sx={{ pr: "15rem" }}>
+          <Grid
+            size={{ md: 5, lg: 4 }}
+            sx={{
+              display: "flex",
+              justifyContent: "flex-end",
+              alignItems: "center",
+            }}
+          >
             <Box
               component="img"
               position="absolute"
@@ -201,7 +224,6 @@ export default function Offer() {
                 background: "#0d204e",
                 width: 400,
                 height: 400,
-                marginLeft: 30,
               }}
             />
             <Box
@@ -209,13 +231,13 @@ export default function Offer() {
                 background: "#0d204e",
                 width: 350,
                 height: 250,
-                marginLeft: 8,
-                marginTop: 10,
+                marginRight: "15rem",
               }}
             />
           </Grid>
         </Grid>
       </Box>
+      {/* //------------------------------------------------------------ */}
       <Box
         sx={{
           pt: "5rem",
@@ -228,54 +250,63 @@ export default function Offer() {
           sx={{
             textAlign: "center",
             fontFamily: "Playfair Display",
-            fontSize: 30,
+            fontSize: "25pt",
             fontWeight: "bold",
             color: "#0d204e",
             pb: "2rem",
           }}
         >
-          What Pineapple Land Offers
+          Pineapple Land Offers
         </Typography>
         <Grid
           container
           sx={{ justifyItems: "center", justifyContent: "center" }}
         >
           <Box
-            component="img"
             position="absolute"
-            src="/asset_4.jpeg"
             sx={{
               background: "#0d204e",
-              width: 400,
-              height: 400,
+              width: "90%",
+              height: 470,
               marginLeft: 0,
             }}
-          />
+          >
+            <img
+              src="/asset_4.jpeg"
+              width="100%"
+              height="470"
+              className="box2"
+            />
+          </Box>
           <Box
             position="absolute"
             sx={{
-              width: "20rem",
+              width: "auto",
+              minWidth: { xs: "20rem", sm: "30rem" },
               height: "17rem",
               background: "#0d204e",
-              marginTop: "20rem",
+              marginTop: "25rem",
+              mr: "4rem",
+              ml: "4rem",
             }}
           >
             <Grid
               container
               spacing={2}
-              sx={{ justifyContent: "center", margin: "1rem",pt:"1rem"}}
+              sx={{ justifyContent: "center", margin: "1rem", pt: "1rem" }}
             >
               <Grid container size={12}>
                 <Grid size={4} sx={{ textAlign: "center" }}>
-                  <ParkOutlined
+                  <Box
+                    component="img"
+                    src="/icon_offer_sx/fluent_tree-evergreen-20-regular.svg"
                     sx={{
-                      fontSize: "2.5rem",
-                      fontFamily: "Poppins",
-                      fontWeight: 300,
+                      width: "2.5rem",
+                      height: "2.5rem",
                       pb: "0.5rem",
-                      color: "white",
                     }}
                   />
+
                   <Typography
                     sx={{
                       fontSize: "10pt",
@@ -288,13 +319,13 @@ export default function Offer() {
                   </Typography>
                 </Grid>
                 <Grid size={4} sx={{ textAlign: "center" }}>
-                  <WifiOutlined
+                  <Box
+                    component="img"
+                    src="/icon_offer_sx/ooui_network.svg"
                     sx={{
-                      fontSize: "2.5rem",
-                      fontFamily: "Poppins",
-                      fontWeight: 300,
+                      width: "2.5rem",
+                      height: "2.5rem",
                       pb: "0.5rem",
-                      color: "white",
                     }}
                   />
                   <Typography
@@ -309,13 +340,13 @@ export default function Offer() {
                   </Typography>
                 </Grid>
                 <Grid size={4} sx={{ textAlign: "center" }}>
-                  <PaymentsOutlined
+                  <Box
+                    component="img"
+                    src="/icon_offer_sx/ic_outline-payments.svg"
                     sx={{
-                      fontSize: "2.5rem",
-                      fontFamily: "Poppins",
-                      fontWeight: 300,
+                      width: "2.5rem",
+                      height: "2.5rem",
                       pb: "0.5rem",
-                      color: "white",
                     }}
                   />
                   <Typography
@@ -332,13 +363,13 @@ export default function Offer() {
               </Grid>
               <Grid container size={12}>
                 <Grid size={4} sx={{ textAlign: "center" }}>
-                  <SettingsSuggestOutlined
+                  <Box
+                    component="img"
+                    src="/icon_offer_sx/icons8_services.svg"
                     sx={{
-                      fontSize: "2.5rem",
-                      fontFamily: "Poppins",
-                      fontWeight: 300,
+                      width: "2.5rem",
+                      height: "2.5rem",
                       pb: "0.5rem",
-                      color: "white",
                     }}
                   />
                   <Typography
@@ -353,13 +384,13 @@ export default function Offer() {
                   </Typography>
                 </Grid>
                 <Grid size={4} sx={{ textAlign: "center" }}>
-                  <HttpsOutlined
+                  <Box
+                    component="img"
+                    src="/icon_offer_sx/bytesize_lock.svg"
                     sx={{
-                      fontSize: "2.5rem",
-                      fontFamily: "Poppins",
-                      fontWeight: 300,
+                      width: "2.5rem",
+                      height: "2.5rem",
                       pb: "0.5rem",
-                      color: "white",
                     }}
                   />
                   <Typography
@@ -374,13 +405,13 @@ export default function Offer() {
                   </Typography>
                 </Grid>
                 <Grid size={4} sx={{ textAlign: "center" }}>
-                  <EmojiObjectsOutlined
+                  <Box
+                    component="img"
+                    src="/icon_offer_sx/emojione-monotone_light-bulb.svg"
                     sx={{
-                      fontSize: "2.5rem",
-                      fontFamily: "Poppins",
-                      fontWeight: 300,
+                      width: "2.5rem",
+                      height: "2.5rem",
                       pb: "0.5rem",
-                      color: "white",
                     }}
                   />
                   <Typography

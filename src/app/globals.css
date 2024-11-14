@@ -44,3 +44,7 @@ a {
 .box1{
   object-fit: cover;
 }
+.box2{
+  object-fit: cover;
+  object-position: 50% 100%;
+}

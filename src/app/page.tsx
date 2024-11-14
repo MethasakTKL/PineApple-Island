@@ -28,7 +28,7 @@ export default function Home() {
         <Grid
           size={12}
           sx={{
-            paddingTop: 10,
+            paddingTop: "2rem",
             justifyContent: "center",
             alignItems: "center",
           }}
@@ -38,85 +38,80 @@ export default function Home() {
         <Grid
           size={12}
           sx={{
-            paddingTop: 10,
+            paddingTop: "2rem",
             justifyContent: "center",
             alignItems: "center",
           }}
         >
           <About />
         </Grid>
+        <Grid
+          size={12}
+          sx={{
+            paddingTop: "2rem",
+            paddingBottom:"2rem",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <Reason />
+        </Grid>
+        <Grid
+          size={12}
+          sx={{
+            paddingTop: "2rem",
+            paddingBottom: "2rem",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <Offer />
+        </Grid>
+        <Grid
+          size={12}
+          sx={{
+            paddingTop: "2rem",
+            paddingBottom: "2rem",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <Galleries />
+        </Grid>
+        <Grid
+          size={12}
+          sx={{
+            paddingTop: "2rem",
+            paddingBottom: "2rem",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <AgentFeature />
+        </Grid>
+        <Grid
+          size={12}
+          sx={{
+            paddingTop: "2rem",
+            paddingBottom: "2rem",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <ContactForm />
+        </Grid>
+        <Grid
+          size={12}
+          sx={{
+            paddingTop: "2rem",
+            paddingBottom: "0rem",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <Footer />
+        </Grid>
       </Grid>
-{/* 
-      <Grid
-        container
-        sx={{
-          justifyContent: "center",
-          alignItems: "center",
-          flexDirection: "column",
-        }}
-      >
-        <About />
-      </Grid>
-      <Grid
-        container
-        sx={{
-          justifyContent: "center",
-          alignItems: "center",
-          flexDirection: "column",
-        }}
-      >
-        <Reason />
-      </Grid>
-      <Grid
-        container
-        sx={{
-          justifyContent: "center",
-          alignItems: "center",
-          flexDirection: "column",
-        }}
-      >
-        <Offer />
-      </Grid>
-      <Grid
-        container
-        sx={{
-          justifyContent: "center",
-          alignItems: "center",
-          flexDirection: "column",
-        }}
-      >
-        <Galleries />
-      </Grid>
-      <Grid
-        container
-        sx={{
-          justifyContent: "center",
-          alignItems: "center",
-          flexDirection: "column",
-        }}
-      >
-        <AgentFeature />
-      </Grid>
-      <Grid
-        container
-        sx={{
-          justifyContent: "center",
-          alignItems: "center",
-          flexDirection: "column",
-        }}
-      >
-        <ContactForm />
-      </Grid>
-      <Grid
-        container
-        sx={{
-          justifyContent: "center",
-          alignItems: "center",
-          flexDirection: "column",
-        }}
-      >
-        <Footer />
-      </Grid> */}
     </Box>
   );
 }

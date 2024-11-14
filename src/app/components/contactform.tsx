@@ -8,14 +8,14 @@ export default function ContactForm() {
         sx={{
           textAlign: "center",
           fontFamily: "Playfair Display",
-          fontSize: 48,
+          fontSize: {xs:36,md:48},
           fontWeight: "bold",
           color: "#0d204e",
         }}
       >
         Stay In Touch
       </Typography>
-      <Typography sx={{ textAlign: "center", pt: 3 }}>
+      <Typography sx={{ textAlign: "center", fontFamily:"Manrope",pt: 3 }}>
         Are you curious about Pineapple Island? Send a message
       </Typography>
       <Grid container justifyContent={"center"}>
@@ -23,11 +23,12 @@ export default function ContactForm() {
           <TextField
             label="Name"
             id="fullWidth"
-            sx={{ width: {xs:'22rem',lg:"40rem"} }}
+            sx={{ width: {xs:'22rem',lg:"40rem"}}}
           />
           <TextField
             label="Phone No"
             id="fullWidth"
+            
           />
           <TextField
             label="Email"
@@ -35,8 +36,12 @@ export default function ContactForm() {
           />
           <TextField
             label="Message"
+            multiline
+            rows={4}
+
             id="fullWidth"
           />
+         
         </Stack>
       </Grid>
       <Grid container justifyContent={"center"} sx={{ pt: 2 }}>
