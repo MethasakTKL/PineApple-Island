@@ -74,6 +74,7 @@ export default function NavBar() {
             }}
           >
             <Button
+              href="#about"
               sx={{
                 color: "black",
                 textTransform: "none",
@@ -85,6 +86,7 @@ export default function NavBar() {
               About Us
             </Button>
             <Button
+              href="#whatwedo"
               sx={{
                 color: "black",
                 textTransform: "none",
@@ -96,6 +98,7 @@ export default function NavBar() {
               What we do
             </Button>
             <Button
+              href="#project"
               sx={{
                 color: "black",
                 textTransform: "none",
@@ -137,6 +140,7 @@ export default function NavBar() {
               }}
             >
               <Button
+              href="#getintouch"
                 variant="contained"
                 disableElevation
                 sx={{ background: "#0E204E", borderRadius: 0, width: "10rem" }}
@@ -197,7 +201,7 @@ export default function NavBar() {
         </Box>
         <List sx={{ width: "auto" }}>
           <ListItem disablePadding>
-            <ListItemButton>
+            <ListItemButton href="#about">
               <ListItemIcon>
                 <BusinessIcon />
               </ListItemIcon>
@@ -205,7 +209,7 @@ export default function NavBar() {
             </ListItemButton>
           </ListItem>
           <ListItem disablePadding>
-            <ListItemButton>
+            <ListItemButton href="#whatwedo">
               <ListItemIcon>
                 <RoofingIcon />
               </ListItemIcon>
@@ -213,7 +217,7 @@ export default function NavBar() {
             </ListItemButton>
           </ListItem>
           <ListItem disablePadding>
-            <ListItemButton>
+            <ListItemButton href="#project">
               <ListItemIcon>
                 <VillaIcon />
               </ListItemIcon>

@@ -37,7 +37,7 @@ export default function StayInTouch() {
           <TextField
             label="Message"
             multiline
-            rows={4}
+            rows={6}
 
             id="fullWidth"
           />

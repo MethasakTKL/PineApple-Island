@@ -94,7 +94,13 @@ export default function FeatureAgent() {
                   secondaryAction={<CheckBox sx={{ color: "#0d204e" }} />}
                   sx={{ bgcolor: "#cfd9d6", height: 30 }}
                 >
-                  <Typography sx={{ fontFamily: "Poppins", fontWeight: 300,fontSize:"11pt" }}>
+                  <Typography
+                    sx={{
+                      fontFamily: "Poppins",
+                      fontWeight: 300,
+                      fontSize: "11pt",
+                    }}
+                  >
                     Lorem ipsum dolor sit amet, consectetur
                   </Typography>
                 </ListItem>
@@ -102,7 +108,13 @@ export default function FeatureAgent() {
                   secondaryAction={<CheckBox sx={{ color: "#0d204e" }} />}
                   sx={{ bgcolor: "white", height: 50 }}
                 >
-                  <Typography sx={{ fontFamily: "Poppins", fontWeight: 300,fontSize:"11pt" }}>
+                  <Typography
+                    sx={{
+                      fontFamily: "Poppins",
+                      fontWeight: 300,
+                      fontSize: "11pt",
+                    }}
+                  >
                     Lorem ipsum dolor sit amet, consectetur
                   </Typography>
                 </ListItem>
@@ -110,7 +122,13 @@ export default function FeatureAgent() {
                   secondaryAction={<CheckBox sx={{ color: "#0d204e" }} />}
                   sx={{ bgcolor: "#cfd9d6", height: 30 }}
                 >
-                  <Typography sx={{ fontFamily: "Poppins", fontWeight: 300,fontSize:"11pt" }}>
+                  <Typography
+                    sx={{
+                      fontFamily: "Poppins",
+                      fontWeight: 300,
+                      fontSize: "11pt",
+                    }}
+                  >
                     Lorem ipsum dolor sit amet, consectetur
                   </Typography>
                 </ListItem>
@@ -118,7 +136,13 @@ export default function FeatureAgent() {
                   secondaryAction={<CheckBox sx={{ color: "#0d204e" }} />}
                   sx={{ bgcolor: "white", height: 50 }}
                 >
-                  <Typography sx={{ fontFamily: "Poppins", fontWeight: 300 ,fontSize:"11pt"}}>
+                  <Typography
+                    sx={{
+                      fontFamily: "Poppins",
+                      fontWeight: 300,
+                      fontSize: "11pt",
+                    }}
+                  >
                     Lorem ipsum dolor sit amet, consectetur
                   </Typography>
                 </ListItem>{" "}
@@ -126,7 +150,13 @@ export default function FeatureAgent() {
                   secondaryAction={<CheckBox sx={{ color: "#0d204e" }} />}
                   sx={{ bgcolor: "#cfd9d6", height: 30 }}
                 >
-                  <Typography sx={{ fontFamily: "Poppins", fontWeight: 300 ,fontSize:"11pt"}}>
+                  <Typography
+                    sx={{
+                      fontFamily: "Poppins",
+                      fontWeight: 300,
+                      fontSize: "11pt",
+                    }}
+                  >
                     Lorem ipsum dolor sit amet, consectetur
                   </Typography>
                 </ListItem>
@@ -134,7 +164,13 @@ export default function FeatureAgent() {
                   secondaryAction={<CheckBox sx={{ color: "#0d204e" }} />}
                   sx={{ bgcolor: "white", height: 50 }}
                 >
-                  <Typography sx={{ fontFamily: "Poppins", fontWeight: 300,fontSize:"11pt" }}>
+                  <Typography
+                    sx={{
+                      fontFamily: "Poppins",
+                      fontWeight: 300,
+                      fontSize: "11pt",
+                    }}
+                  >
                     Lorem ipsum dolor sit amet, consectetur
                   </Typography>
                 </ListItem>{" "}
@@ -142,7 +178,13 @@ export default function FeatureAgent() {
                   secondaryAction={<CheckBox sx={{ color: "#0d204e" }} />}
                   sx={{ bgcolor: "#cfd9d6", height: 30 }}
                 >
-                  <Typography sx={{ fontFamily: "Poppins", fontWeight: 300,fontSize:"11pt" }}>
+                  <Typography
+                    sx={{
+                      fontFamily: "Poppins",
+                      fontWeight: 300,
+                      fontSize: "11pt",
+                    }}
+                  >
                     Lorem ipsum dolor sit amet, consectetur
                   </Typography>
                 </ListItem>
@@ -150,7 +192,13 @@ export default function FeatureAgent() {
                   secondaryAction={<CheckBox sx={{ color: "#0d204e" }} />}
                   sx={{ bgcolor: "white", height: 50 }}
                 >
-                  <Typography sx={{ fontFamily: "Poppins", fontWeight: 300,fontSize:"11pt" }}>
+                  <Typography
+                    sx={{
+                      fontFamily: "Poppins",
+                      fontWeight: 300,
+                      fontSize: "11pt",
+                    }}
+                  >
                     Lorem ipsum dolor sit amet, consectetur
                   </Typography>
                 </ListItem>{" "}
@@ -158,7 +206,13 @@ export default function FeatureAgent() {
                   secondaryAction={<CheckBox sx={{ color: "#0d204e" }} />}
                   sx={{ bgcolor: "#cfd9d6", height: 30 }}
                 >
-                  <Typography sx={{ fontFamily: "Poppins", fontWeight: 300,fontSize:"11pt" }}>
+                  <Typography
+                    sx={{
+                      fontFamily: "Poppins",
+                      fontWeight: 300,
+                      fontSize: "11pt",
+                    }}
+                  >
                     Lorem ipsum dolor sit amet, consectetur
                   </Typography>
                 </ListItem>
@@ -166,7 +220,13 @@ export default function FeatureAgent() {
                   secondaryAction={<CheckBox sx={{ color: "#0d204e" }} />}
                   sx={{ bgcolor: "white", height: 50 }}
                 >
-                  <Typography sx={{ fontFamily: "Poppins", fontWeight: 300,fontSize:"11pt" }}>
+                  <Typography
+                    sx={{
+                      fontFamily: "Poppins",
+                      fontWeight: 300,
+                      fontSize: "11pt",
+                    }}
+                  >
                     Lorem ipsum dolor sit amet, consectetur
                   </Typography>
                 </ListItem>
@@ -178,7 +238,12 @@ export default function FeatureAgent() {
           container
           spacing={1}
           pt={10}
-          sx={{ display: "flex", justifyContent: "center",alignItems: "center", mt:"10rem" }}
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            mt: "10rem",
+          }}
         >
           <Grid container size={5}>
             <Grid
@@ -236,7 +301,7 @@ export default function FeatureAgent() {
                     textTransform: "none",
                   }}
                 >
-                  Get in Touch
+                  Join Now
                 </Typography>
               </Button>
             </Grid>
@@ -274,50 +339,67 @@ export default function FeatureAgent() {
       <Box
         sx={{
           background: "#0d204e",
-          pt: "5rem",
-          pb: "5rem",
-          display: { sm: "block", md: "none", lg: "none" },
+          display: { sm: "flex", md: "none", lg: "none" },
+          justifyContent: "center",
+          alignItems: "center",
+          pb:"2rem"
         }}
       >
         <Grid container spacing={2} sx={{ pt: "2.5rem", textAlign: "center" }}>
-          <Grid>
+          <Grid size={12}>
             <Typography
               sx={{
                 color: "white",
                 fontSize: "22pt",
                 fontWeight: 300,
                 fontFamily: "Playfair Display",
+                pb: "1rem",
               }}
             >
               Become an Agent
             </Typography>
-            <Typography
+            <Grid
+              size={12}
               sx={{
-                color: "white",
-                fontSize: "12pt",
-                fontWeight: 300,
-                fontFamily: "Lato",
-                marginLeft: "3rem",
-                marginRight: "3rem",
+                display: "flex",
+                justifyContent: "center",
+                textAlign: "center",
               }}
             >
-              A community that gives you a taste of happiness, a place you’ll
-              love to live and an opportunity to build a home.
-            </Typography>
-            <Button
-              variant="contained"
-              sx={{ background: "white", mt: "1rem", mb: "1rem" }}
-            >
-              <Typography
-                sx={{
-                  fontFamily: "Lato",
-                  color: "#0d204e",
-                  textTransform: "none",
-                }}
+              <Box
+                sx={{ width: "100%", marginLeft: "2rem", marginRight: "2rem" }}
               >
-                Join Now
-              </Typography>
-            </Button>
+                <Typography
+                  sx={{
+                    color: "white",
+                    fontSize: "13pt",
+                    fontWeight: 200,
+                    fontFamily: "Lato",
+                    marginLeft: "3rem",
+                    marginRight: "3rem",
+                  }}
+                >
+                  A community that gives you a taste of happiness, a place
+                  you’ll love to live and an opportunity to build a home.
+                </Typography>
+              </Box>
+            </Grid>
+            <Grid size={12}>
+              <Button
+                variant="contained"
+                sx={{ background: "white", mt: "1rem", mb: "1rem" }}
+              >
+                <Typography
+                  sx={{
+                    fontFamily: "Lato",
+                    color: "#0d204e",
+                    textTransform: "none",
+                  }}
+                >
+                  Join Now
+                </Typography>
+              </Button>
+            </Grid>
           </Grid>
         </Grid>
       </Box>

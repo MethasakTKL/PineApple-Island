@@ -1,5 +1,5 @@
 "use client";
-import { Box} from "@mui/material";
+import { Box } from "@mui/material";
 import NavBar from "./components/navbar";
 import Intro from "./components/intro";
 import Grid from "@mui/material/Grid2";
@@ -34,6 +34,7 @@ export default function Home() {
           <Intro />
         </Grid>
         <Grid
+          id="about"
           size={12}
           sx={{
             paddingTop: "2rem",
@@ -44,6 +45,7 @@ export default function Home() {
           <About />
         </Grid>
         <Grid
+          id="whatwedo"
           size={12}
           sx={{
             paddingTop: "2rem",
@@ -66,6 +68,7 @@ export default function Home() {
           <Offer />
         </Grid>
         <Grid
+          id="project"
           size={12}
           sx={{
             paddingTop: "2rem",
@@ -88,6 +91,7 @@ export default function Home() {
           <FeatureAgent />
         </Grid>
         <Grid
+          id="getintouch"
           size={12}
           sx={{
             paddingTop: "2rem",

@@ -1,6 +1,25 @@
-import { Box, Paper, Typography } from "@mui/material";
+import {
+  ArrowBackIos,
+  ArrowForwardIos,
+  NavigateBefore,
+  NavigateNext,
+} from "@mui/icons-material";
+import { Box, IconButton, Paper, Typography } from "@mui/material";
 import Grid from "@mui/material/Grid2";
+import { useState } from "react";
 export default function About() {
+  const images = ["/asset_1.jpeg", "/asset_2.jpeg", "/asset_3.jpeg", "/asset_4.jpeg",];
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  const handleNext = () => {
+    setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+  };
+
+  const handlePrevious = () => {
+    setCurrentImageIndex(
+      (prevIndex) => (prevIndex - 1 + images.length) % images.length
+    );
+  };
   return (
     <Box
       sx={{
@@ -53,13 +72,65 @@ export default function About() {
           >
             <Grid container>
               <Grid size={7}>
-                <Box sx={{ background: "pink", width: "100%", height: 520 }}>
+                <Box
+                  sx={{
+                    background: "pink",
+                    width: "auto",
+                    maxWidth: "28%",
+                    height: 520,
+                    position: "absolute",
+                  }}
+                >
                   <img
-                    src="/asset_2.jpeg"
+                    src={images[currentImageIndex]}
                     width="100%"
                     height="100%"
                     className="box1"
                   />
+                </Box>
+                <Box
+                  sx={{
+                    width: "25%",
+                    height: 520,
+                    position: "absolute",
+                    display: "flex",
+                    alignItems: "center",
+                    // background:"purple",
+                    ml: 3,
+                  }}
+                >
+                  <Grid
+                    container
+                    size={12}
+                    sx={{
+                      width: "100%",
+                    }}
+                  >
+                    <Grid
+                      size={6}
+                      sx={{
+                        display: "flex",
+                        // background: "yellow",
+                        justifyContent: "flex-start",
+                      }}
+                    >
+                      <IconButton onClick={handlePrevious}>
+                        <ArrowBackIos sx={{ color: "white" }} />
+                      </IconButton>
+                    </Grid>
+                    <Grid
+                      size={6}
+                      sx={{
+                        display: "flex",
+                        // background: "green",
+                        justifyContent: "flex-end",
+                      }}
+                    >
+                      <IconButton onClick={handleNext}>
+                        <ArrowForwardIos sx={{ color: "white" }} />
+                      </IconButton>
+                    </Grid>
+                  </Grid>
                 </Box>
               </Grid>
               <Grid size={5}>
@@ -127,7 +198,7 @@ export default function About() {
                 pb: "2rem",
               }}
             >
-              About <br/>
+              About <br />
               Pineapple Island
             </Typography>
           </Grid>

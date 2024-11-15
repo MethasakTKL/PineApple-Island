@@ -165,6 +165,7 @@ export default function Intro() {
                 sx={{ justifyContent: "center", textAlign: "center" }}
               >
                 <Button
+                  href="#getintouch"
                   variant="contained"
                   sx={{
                     background: "white",
