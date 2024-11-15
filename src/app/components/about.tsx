@@ -1,12 +1,11 @@
+import { useState } from "react";
+import { Box, IconButton, Paper, Typography } from "@mui/material";
+import Grid from "@mui/material/Grid2";
 import {
   ArrowBackIos,
   ArrowForwardIos,
-  NavigateBefore,
-  NavigateNext,
 } from "@mui/icons-material";
-import { Box, IconButton, Paper, Typography } from "@mui/material";
-import Grid from "@mui/material/Grid2";
-import { useState } from "react";
+
 export default function About() {
   const images = ["/asset_2.jpeg", "/asset_8.jpeg", "/asset_9.jpeg"];
   const [currentImageIndex, setCurrentImageIndex] = useState(0);

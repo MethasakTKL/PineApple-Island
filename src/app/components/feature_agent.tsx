@@ -1,26 +1,7 @@
-import {
-  CheckBox,
-  EmojiObjectsOutlined,
-  HttpsOutlined,
-  ParkOutlined,
-  PaymentsOutlined,
-  SettingsSuggestOutlined,
-  WifiOutlined,
-} from "@mui/icons-material";
-import {
-  Box,
-  Button,
-  Icon,
-  IconButton,
-  List,
-  ListItem,
-  ListItemText,
-  Paper,
-  Stack,
-  TextField,
-  Typography,
-} from "@mui/material";
+import { CheckBox } from "@mui/icons-material";
+import { Box, Button, List, ListItem, Typography } from "@mui/material";
 import Grid from "@mui/material/Grid2";
+
 export default function FeatureAgent() {
   return (
     <Box>

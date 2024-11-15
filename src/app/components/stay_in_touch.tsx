@@ -218,6 +218,7 @@ export default function StayInTouch() {
           }}
         >
           <CssTextField
+          type="text"
             id="message"
             label="Message"
             variant="standard"

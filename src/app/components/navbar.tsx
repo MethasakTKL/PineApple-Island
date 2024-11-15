@@ -1,3 +1,8 @@
+import { useState } from "react";
+import MenuIcon from "@mui/icons-material/Menu";
+import VillaIcon from "@mui/icons-material/Villa";
+import RoofingIcon from "@mui/icons-material/Roofing";
+import BusinessIcon from "@mui/icons-material/Business";
 import {
   AppBar,
   Box,
@@ -12,11 +17,8 @@ import {
   Toolbar,
   Typography,
 } from "@mui/material";
-import { useState } from "react";
-import MenuIcon from "@mui/icons-material/Menu";
-import VillaIcon from "@mui/icons-material/Villa";
-import RoofingIcon from "@mui/icons-material/Roofing";
-import BusinessIcon from "@mui/icons-material/Business";
+
+
 export default function NavBar() {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
