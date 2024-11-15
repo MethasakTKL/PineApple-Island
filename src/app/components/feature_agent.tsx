@@ -37,7 +37,7 @@ export default function FeatureAgent() {
           sx={{ display: "flex", justifyContent: "center" }}
         >
           <Grid
-            size={5}
+            size={{ md: 5, lg: 4 }}
             sx={{
               display: "flex",
               justifyContent: "flex-start",
@@ -63,7 +63,7 @@ export default function FeatureAgent() {
               }}
             />
           </Grid>
-          <Grid container size={5}>
+          <Grid container size={{ md: 5, lg: 4 }}>
             <Grid
               size={12}
               sx={{
@@ -245,7 +245,7 @@ export default function FeatureAgent() {
             mt: "10rem",
           }}
         >
-          <Grid container size={5}>
+          <Grid container size={{ md: 5, lg: 4 }}>
             <Grid
               size={12}
               sx={{
@@ -307,7 +307,7 @@ export default function FeatureAgent() {
             </Grid>
           </Grid>
           <Grid
-            size={5}
+            size={{ md: 5, lg: 4 }}
             sx={{
               display: "flex",
               justifyContent: "flex-end",
@@ -342,7 +342,7 @@ export default function FeatureAgent() {
           display: { sm: "flex", md: "none", lg: "none" },
           justifyContent: "center",
           alignItems: "center",
-          pb:"2rem"
+          pb: "2rem",
         }}
       >
         <Grid container spacing={2} sx={{ pt: "2.5rem", textAlign: "center" }}>

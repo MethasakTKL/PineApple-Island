@@ -16,14 +16,14 @@ export default function Intro() {
           },
         }}
       >
-        <Grid size={10.5}>
+        <Grid size={9.5}>
           <Box
             sx={{
               height: 700,
               width: "auto",
               pl: "12rem",
               clipPath:
-                "polygon(50% 0%,100% 0%,100% 100%,80% 80%,0% 100%,0% 0%)",
+                "polygon(0 0, 100% 0, 100% 100%, 83% 83%, 0% 100%)",
             }}
           >
             <img
@@ -44,14 +44,14 @@ export default function Intro() {
             background: "#0d204e",
             position: "absolute",
             top: "20%",
-            right: "60%",
+            right: {md:"55%",lg:"55%"},
             borderRadius: 0,
           }}
         >
           <Typography
             sx={{
               color: "white",
-              fontSize: { md: 38, lg: 48 },
+              fontSize: { md: 48, lg: 48 },
               fontFamily: "Playfair Display",
               fontWeight: 600,
               pt: 5,

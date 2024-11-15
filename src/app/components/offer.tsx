@@ -275,7 +275,7 @@ export default function Offer() {
             position="absolute"
             sx={{
               width: "auto",
-              minWidth: { xs: "20rem", sm: "30rem" },
+              minWidth: { xs: "22rem", sm: "30rem" },
               height: "17rem",
               background: "#0d204e",
               marginTop: "25rem",

@@ -8,7 +8,7 @@ import { Box, IconButton, Paper, Typography } from "@mui/material";
 import Grid from "@mui/material/Grid2";
 import { useState } from "react";
 export default function About() {
-  const images = ["/asset_1.jpeg", "/asset_2.jpeg", "/asset_3.jpeg", "/asset_4.jpeg",];
+  const images = ["/asset_2.jpeg", "/asset_8.jpeg", "/asset_9.jpeg"];
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const handleNext = () => {
@@ -71,12 +71,12 @@ export default function About() {
             }}
           >
             <Grid container>
-              <Grid size={7}>
+              <Grid size={8}>
                 <Box
                   sx={{
                     background: "pink",
                     width: "auto",
-                    maxWidth: "28%",
+                    maxWidth: "29%",
                     height: 520,
                     position: "absolute",
                   }}
@@ -90,13 +90,13 @@ export default function About() {
                 </Box>
                 <Box
                   sx={{
-                    width: "25%",
+                    width: "26%",
                     height: 520,
                     position: "absolute",
                     display: "flex",
                     alignItems: "center",
                     // background:"purple",
-                    ml: 3,
+                    ml: 3.5,
                   }}
                 >
                   <Grid
@@ -133,7 +133,7 @@ export default function About() {
                   </Grid>
                 </Box>
               </Grid>
-              <Grid size={5}>
+              <Grid size={4}>
                 <Box
                   sx={{
                     width: "100%",
@@ -146,12 +146,12 @@ export default function About() {
                   <Typography
                     sx={{
                       color: "white",
-                      fontSize: { md: "11pt", xl: "15pt" },
+                      fontSize: { md: "11pt", xl: "13pt" },
                       fontFamily: "Manrope",
                       fontWeight: 300,
-                      textAlign: "center",
+                      textAlign: "flex-start",
                       width: "100%",
-                      paddingLeft: "2rem",
+                      paddingLeft: "rem",
                       paddingRight: "2rem",
                     }}
                   >
@@ -210,7 +210,7 @@ export default function About() {
                   width: "100%",
                   height: { xs: "30rem", sm: 300 },
                   position: "absolute",
-                  background: "#1f1f1f",
+                  background: "#474747",
                   opacity: 0.6,
                 }}
               />
@@ -227,11 +227,11 @@ export default function About() {
                 <Typography
                   sx={{
                     color: "white",
-                    fontSize: 15,
-                    fontWeight: 300,
+                    fontSize: 17,
+                    fontWeight: 400,
                     fontFamily: "Manrope",
                     textAlign: "center",
-                    width: "50%",
+                    width: "60%",
                     paddingLeft: "2rem",
                     paddingRight: "2rem",
                   }}

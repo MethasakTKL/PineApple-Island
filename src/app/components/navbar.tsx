@@ -143,7 +143,7 @@ export default function NavBar() {
               href="#getintouch"
                 variant="contained"
                 disableElevation
-                sx={{ background: "#0E204E", borderRadius: 0, width: "10rem" }}
+                sx={{ background: "#0E204E", borderRadius: 0, width: "auto" }}
               >
                 <Typography
                   sx={{
@@ -189,7 +189,7 @@ export default function NavBar() {
               color: "white",
               width: { xs: "auto", md: "250px" },
               fontFamily: "Playfair Display",
-              fontWeight: "300",
+              fontWeight: "600",
               lineHeight: "1",
               pl: 2,
               pt: 2,

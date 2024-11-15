@@ -61,7 +61,7 @@ export default function Reason() {
               }}
             >
               <Grid container>
-                <Grid size={5.5}>
+                <Grid size={5}>
                   <Box
                     sx={{
                       width: "auto",
@@ -75,13 +75,13 @@ export default function Reason() {
                     <Typography
                       sx={{
                         color: "#0d204e",
-                        fontSize: { md: "11pt", xl: "15pt" },
+                        fontSize: { md: "11pt", xl: "13pt" },
                         fontFamily: "Manrope",
                         fontWeight: 300,
-                        textAlign: "center",
+                        textAlign: "flex-start",
                         width: "100%",
-                        paddingLeft: "2rem",
-                        paddingRight: "2rem",
+                        paddingLeft: {md:"2rem",lg:"3rem"},
+                        paddingRight: {md:"2rem",lg:"3rem"},
                       }}
                     >
                       Pineapple Island is the most sought-after community in
@@ -94,7 +94,7 @@ export default function Reason() {
                     </Typography>
                   </Box>
                 </Grid>
-                <Grid size={6.5}>
+                <Grid size={7}>
                   <Box sx={{ background: "pink", width: "100%", height: 520 }}>
                     <img
                       src="/asset_3.jpeg"
@@ -161,7 +161,7 @@ export default function Reason() {
               </Typography>
               <Typography
                 margin={3}
-                sx={{ color: "#0E204E", fontFamily: "Manrope" }}
+                sx={{ color: "#0E204E", fontFamily: "Manrope",fontWeight:100 }}
               >
                 Pineapple Island is the most sought-after community in Ibadan
                 that values and puts the needs of their clients first. It is a
@@ -173,7 +173,7 @@ export default function Reason() {
               <Box>
                 <img
                   src="/asset_3.jpeg"
-                  width="100%"
+                  width="95%"
                   height="270rem"
                   className="box1"
                 />

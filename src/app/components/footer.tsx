@@ -94,7 +94,7 @@ export default function Footer() {
                 sx={{
                   color: "white",
                   fontSize: 22,
-                  fontWeight: 300,
+                  fontWeight: 400,
                   fontFamily: "Manrope",
                 }}
               >
@@ -104,7 +104,7 @@ export default function Footer() {
                 sx={{
                   color: "white",
                   fontSize: 13,
-                  fontWeight: 300,
+                  fontWeight: 100,
                   fontFamily: "Manrope",
                 }}
               >
