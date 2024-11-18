@@ -23,8 +23,7 @@ export default function Intro() {
               height: 700,
               width: "auto",
               pl: "12rem",
-              clipPath:
-                "polygon(0 0, 100% 0, 100% 100%, 83% 83%, 0% 100%)",
+              clipPath: "polygon(0 0, 100% 0, 100% 100%, 83% 83%, 0% 100%)",
             }}
           >
             <img
@@ -45,7 +44,7 @@ export default function Intro() {
             background: "#0d204e",
             position: "absolute",
             top: "20%",
-            right: {md:"55%",lg:"55%"},
+            right: { md: "55%", lg: "55%" },
             borderRadius: 0,
           }}
         >
@@ -129,7 +128,7 @@ export default function Intro() {
               <Typography
                 sx={{
                   color: "white",
-                  fontSize: { xs: "25pt", sm: "27pt" },
+                  fontSize: { xs: "21pt", sm: "27pt" },
                   fontFamily: "Playfair Display",
                   fontWeight: 600,
                   textAlign: "center",

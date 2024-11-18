@@ -69,6 +69,7 @@ export default function StayInTouch() {
             textAlign: "center",
             fontFamily: "Manrope",
             pt: 3,
+
             display: { xs: "none", md: "block" },
           }}
         >
@@ -80,6 +81,9 @@ export default function StayInTouch() {
             fontFamily: "Manrope",
             pt: 3,
             display: { xs: "block", md: "none" },
+            pl: "2rem",
+            pr: "2rem",
+
           }}
         >
           If you are interested in finding out more about The Discovery Village,
