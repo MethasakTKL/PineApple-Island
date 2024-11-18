@@ -1,6 +1,13 @@
 import styled from "@emotion/styled";
-import { Box, Button, Stack, TextField, Typography } from "@mui/material";
-import Grid from "@mui/material/Grid2";
+import {
+  Box,
+  Button,
+  Typography,
+  TextField,
+  useMediaQuery,
+  useTheme,
+} from "@mui/material";
+import { useState } from "react";
 
 const CssTextField = styled(TextField)({
   "& label.Mui-focused": {
@@ -12,6 +19,7 @@ const CssTextField = styled(TextField)({
   "& .MuiOutlinedInput-root": {
     "& fieldset": {
       borderColor: "#E0E3E7",
+      borderRadius: 0,
     },
     "&:hover fieldset": {
       borderColor: "#B2BAC2",
@@ -21,124 +29,29 @@ const CssTextField = styled(TextField)({
     },
   },
 });
+
 export default function StayInTouch() {
+  const theme = useTheme();
+  const isMd = useMediaQuery(theme.breakpoints.up("md"));
+
+  const [name, setName] = useState("");
+  const [phoneNo, setPhoneNo] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleSent = () => {
+    const formData = {
+      name: name,
+      phoneNo: phoneNo,
+      email: email,
+      message: message,
+    };
+    console.log(formData);
+  };
+
   return (
     <Box>
-      <Box
-        sx={{
-          pt: 5,
-          pb: 10,
-          display: { xs: "none", sm: "block", md: "block" },
-        }}
-      >
-        <Typography
-          variant="h4"
-          sx={{
-            textAlign: "center",
-            fontFamily: "Playfair Display",
-            fontSize: { xs: 36, md: 48 },
-            fontWeight: "bold",
-            color: "#0d204e",
-          }}
-        >
-          Stay In Touch
-        </Typography>
-        <Typography sx={{ textAlign: "center", fontFamily: "Manrope", pt: 3 }}>
-          Are you curious about Pineapple Island? Send a message
-        </Typography>
-        <Box
-          sx={{
-            //background: "yellow",
-            display: "flex",
-            justifyContent: "center",
-            pt: "2rem",
-            mr: "2rem",
-            ml: "2rem",
-          }}
-        >
-          <CssTextField
-            id="name"
-            label="Name"
-            variant="outlined"
-            sx={{ width: "40rem" }}
-          />
-        </Box>
-        <Box
-          sx={{
-            //background: "yellow",
-            display: "flex",
-            justifyContent: "center",
-            pt: "2rem",
-            mr: "2rem",
-            ml: "2rem",
-          }}
-        >
-          <CssTextField
-            id="phoneno"
-            label="Phone No"
-            variant="outlined"
-            sx={{ width: "40rem" }}
-          />
-        </Box>
-        <Box
-          sx={{
-            //background: "yellow",
-            display: "flex",
-            justifyContent: "center",
-            pt: "2rem",
-            mr: "2rem",
-            ml: "2rem",
-          }}
-        >
-          <CssTextField
-            id="email"
-            label="Email"
-            variant="outlined"
-            sx={{ width: "40rem" }}
-          />
-        </Box>
-        <Box
-          sx={{
-            //background: "yellow",
-            display: "flex",
-            justifyContent: "center",
-            pt: "2rem",
-            mr: "2rem",
-            ml: "2rem",
-          }}
-        >
-          <CssTextField
-            id="Message"
-            label="Message"
-            variant="outlined"
-            sx={{ width: "40rem" }}
-          />
-        </Box>
-        <Box
-          sx={{
-            //background: "yellow",
-            display: "flex",
-            justifyContent: "center",
-            pt: "2rem",
-          }}
-        >
-          <Button
-            variant="contained"
-            sx={{
-              color: "white",
-              background: "#121f4b",
-              width: "8rem",
-              borderRadius: 0,
-            }}
-          >
-            send
-          </Button>
-        </Box>
-      </Box>
-      {/* -------------------------------------------------------------------------------------- */}
-      <Box
-        sx={{ pt: 5, pb: 10, display: { xs: "block", sm: "none", md: "none" } }}
-      >
+      <Box>
         <Typography
           variant="h4"
           sx={{
@@ -156,8 +69,17 @@ export default function StayInTouch() {
             textAlign: "center",
             fontFamily: "Manrope",
             pt: 3,
-            mr: "2rem",
-            ml: "2rem",
+            display: { xs: "none", md: "block" },
+          }}
+        >
+          Are you curious about Pineapple Island? Send a message
+        </Typography>
+        <Typography
+          sx={{
+            textAlign: "center",
+            fontFamily: "Manrope",
+            pt: 3,
+            display: { xs: "block", md: "none" },
           }}
         >
           If you are interested in finding out more about The Discovery Village,
@@ -165,69 +87,82 @@ export default function StayInTouch() {
         </Typography>
         <Box
           sx={{
-            //background: "yellow",
             display: "flex",
             justifyContent: "center",
             pt: "2rem",
+            mr: "2rem",
+            ml: "2rem",
           }}
         >
           <CssTextField
             id="name"
             label="Name"
-            variant="standard"
-            sx={{ width: "20rem" }}
+            value={name}
+            variant={isMd ? "outlined" : "standard"}
+            sx={{ width: "40rem" }}
+            onChange={(e) => setName(e.target.value)}
           />
         </Box>
         <Box
           sx={{
-            //background: "yellow",
             display: "flex",
             justifyContent: "center",
             pt: "2rem",
+            mr: "2rem",
+            ml: "2rem",
           }}
         >
           <CssTextField
             id="phoneno"
             label="Phone No"
-            variant="standard"
-            sx={{ width: "20rem" }}
+            value={phoneNo}
+            variant={isMd ? "outlined" : "standard"}
+            sx={{ width: "40rem" }}
+            onChange={(e) => setPhoneNo(e.target.value)}
           />
         </Box>
         <Box
           sx={{
-            //background: "yellow",
             display: "flex",
             justifyContent: "center",
             pt: "2rem",
+            mr: "2rem",
+            ml: "2rem",
           }}
         >
           <CssTextField
             id="email"
             label="Email"
-            variant="standard"
-            sx={{ width: "20rem" }}
+            value={email}
+            variant={isMd ? "outlined" : "standard"}
+            sx={{ width: "40rem" }}
+            onChange={(e) => setEmail(e.target.value)}
           />
         </Box>
-
         <Box
           sx={{
-            //background: "yellow",
             display: "flex",
             justifyContent: "center",
             pt: "2rem",
+            mr: "2rem",
+            ml: "2rem",
           }}
         >
           <CssTextField
-          type="text"
-            id="message"
+            id="Message"
             label="Message"
-            variant="standard"
-            sx={{ width: "20rem" }}
+            value={message}
+            multiline
+            rows={6}
+            variant={isMd ? "outlined" : "standard"}
+            sx={{
+              width: "40rem",
+            }}
+            onChange={(e) => setMessage(e.target.value)}
           />
         </Box>
         <Box
           sx={{
-            //background: "yellow",
             display: "flex",
             justifyContent: "center",
             pt: "2rem",
@@ -241,6 +176,7 @@ export default function StayInTouch() {
               width: "8rem",
               borderRadius: 0,
             }}
+            onClick={handleSent}
           >
             send
           </Button>

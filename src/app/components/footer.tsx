@@ -8,9 +8,16 @@ import {
   Typography,
 } from "@mui/material";
 import Grid from "@mui/material/Grid2";
-
+import { useState } from "react";
 
 export default function Footer() {
+  const [email, setEmail] = useState("");
+  const handleSubscribe = () => {
+    const formData = {
+      email: email,
+    };
+    console.log(formData);
+  };
   return (
     <Box
       sx={{
@@ -62,16 +69,23 @@ export default function Footer() {
                 <OutlinedInput
                   id="filled-basic"
                   placeholder="Email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                   endAdornment={
                     <InputAdornment position="end">
-                      <Button>
+                      <Button onClick={handleSubscribe}>
                         <Typography sx={{ fontSize: "10pt", color: "grey" }}>
                           Subscribe
                         </Typography>
                       </Button>
                     </InputAdornment>
                   }
-                  sx={{ background: "white", width: 300, marginTop: 2 ,borderRadius:0 }}
+                  sx={{
+                    background: "white",
+                    width: 300,
+                    marginTop: 2,
+                    borderRadius: 0,
+                  }}
                 />
               </FormControl>
             </Stack>
