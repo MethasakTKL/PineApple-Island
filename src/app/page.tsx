@@ -1,15 +1,18 @@
 "use client";
 import { Box, createTheme, ThemeProvider } from "@mui/material";
-import NavBar from "./components/navbar";
-import Intro from "./components/intro";
 import Grid from "@mui/material/Grid2";
-import StayInTouch from "./components/stay_in_touch";
-import Footer from "./components/footer";
-import Galleries from "./components/galleries";
-import Offer from "./components/offer";
-import Reason from "./components/reason";
-import FeatureAgent from "./components/feature_agent";
-import About from "./components/about";
+
+//import components
+import Intro from "./components/Intro";
+import StayInTouch from "./components/StayInTouch";
+import Footer from "./components/Footer";
+import Galleries from "./components/Galleries";
+import Offer from "./components/Offer";
+import Reason from "./components/Reason";
+import About from "./components/About";
+import Agent from "./components/Agent";
+import Feature from "./components/Feature";
+import NavBar from "./components/Navbar";
 
 const theme = createTheme({
   typography: {
@@ -24,7 +27,7 @@ const theme = createTheme({
 });
 export default function Home() {
   return (
-    <ThemeProvider theme={theme} >
+    <ThemeProvider theme={theme}>
       <NavBar />
       <Grid
         container
@@ -99,7 +102,18 @@ export default function Home() {
             alignItems: "center",
           }}
         >
-          <FeatureAgent />
+          <Feature />
+        </Grid>
+        <Grid
+          size={12}
+          sx={{
+            paddingTop: "2rem",
+            paddingBottom: "2rem",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <Agent />
         </Grid>
         <Grid
           id="getintouch"
