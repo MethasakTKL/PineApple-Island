@@ -1,8 +1,36 @@
-import {
-  Box,
-  Typography,
-} from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import Grid from "@mui/material/Grid2";
+
+
+const itemData = [
+  {
+    img: "/galleries/galleries_1.jpeg",
+  },
+  {
+    img: "/galleries/galleries_2.jpeg",
+  },
+  {
+    img: "/galleries/galleries_3.jpeg",
+  },
+  {
+    img: "/galleries/galleries_4.jpeg",
+  },
+  {
+    img: "/galleries/galleries_5.jpeg",
+  },
+  {
+    img: "/galleries/galleries_6.jpeg",
+  },
+  {
+    img: "/galleries/galleries_7.jpeg",
+  },
+  {
+    img: "/galleries/galleries_8.jpeg",
+  },
+  {
+    img: "/galleries/galleries_9.jpeg",
+  },
+];
 
 export default function Galleries() {
   return (
@@ -22,10 +50,9 @@ export default function Galleries() {
             },
           }}
         >
-          <Grid size={12} >
+          <Grid size={12}>
             <Typography
               variant="h4"
-              
               sx={{
                 textAlign: "center",
                 fontFamily: "Playfair Display",
@@ -37,10 +64,11 @@ export default function Galleries() {
               Galleries
             </Typography>
             <Typography
-              sx={{ textAlign: "center", pt: 2,pb:2, fontFamily: "Manrope" }}
+              sx={{ textAlign: "center", pt: 2, pb: 2, fontFamily: "Manrope" }}
             >
               a community that gives you a taste of happiness, a place you’ll
-              love to live and<br/> an opportunity to build a home.
+              love to live and
+              <br /> an opportunity to build a home.
             </Typography>
           </Grid>
           {itemData.map((item, index) => (
@@ -87,8 +115,8 @@ export default function Galleries() {
                 textAlign: "center",
                 pt: "1rem",
                 pb: "1rem",
-                pl:"3rem",
-                pr:"3rem",
+                pl: "3rem",
+                pr: "3rem",
                 fontFamily: "lato",
                 fontWeight: "300",
               }}
@@ -232,32 +260,3 @@ export default function Galleries() {
     </Box>
   );
 }
-const itemData = [
-  {
-    img: "/galleries/galleries_1.jpeg",
-  },
-  {
-    img: "/galleries/galleries_2.jpeg",
-  },
-  {
-    img: "/galleries/galleries_3.jpeg",
-  },
-  {
-    img: "/galleries/galleries_4.jpeg",
-  },
-  {
-    img: "/galleries/galleries_5.jpeg",
-  },
-  {
-    img: "/galleries/galleries_6.jpeg",
-  },
-  {
-    img: "/galleries/galleries_7.jpeg",
-  },
-  {
-    img: "/galleries/galleries_8.jpeg",
-  },
-  {
-    img: "/galleries/galleries_9.jpeg",
-  },
-];

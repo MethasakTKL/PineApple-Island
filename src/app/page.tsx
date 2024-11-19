@@ -1,5 +1,5 @@
 "use client";
-import { Box } from "@mui/material";
+import { Box, createTheme, ThemeProvider } from "@mui/material";
 import NavBar from "./components/navbar";
 import Intro from "./components/intro";
 import Grid from "@mui/material/Grid2";
@@ -11,9 +11,20 @@ import Reason from "./components/reason";
 import FeatureAgent from "./components/feature_agent";
 import About from "./components/about";
 
+const theme = createTheme({
+  typography: {
+    fontFamily: [
+      "Playfair_Display",
+      "Manrope",
+      "Lato",
+      "Roboto",
+      "Poppins",
+    ].join(","),
+  },
+});
 export default function Home() {
   return (
-    <Box>
+    <ThemeProvider theme={theme} >
       <NavBar />
       <Grid
         container
@@ -114,6 +125,6 @@ export default function Home() {
           <Footer />
         </Grid>
       </Grid>
-    </Box>
+    </ThemeProvider>
   );
 }
