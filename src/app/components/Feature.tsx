@@ -28,8 +28,9 @@ export default function Feature() {
               component="img"
               position="absolute"
               src="/asset_6.jpeg"
+              alt="dinner-table"
               sx={{
-                background: "#0d204e",
+                background: "white",
                 width: 370,
                 height: 550,
               }}

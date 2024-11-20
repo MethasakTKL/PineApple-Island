@@ -95,8 +95,9 @@ export default function Agent() {
               component="img"
               position="absolute"
               src="/asset_7.jpeg"
+              alt="women-agent"
               sx={{
-                background: "#0d204e",
+                background: "white",
                 width: 370,
                 height: 550,
               }}

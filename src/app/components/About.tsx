@@ -1,10 +1,7 @@
 import { useState } from "react";
 import { Box, IconButton, Paper, Typography } from "@mui/material";
 import Grid from "@mui/material/Grid2";
-import {
-  ArrowBackIos,
-  ArrowForwardIos,
-} from "@mui/icons-material";
+import { ArrowBackIos, ArrowForwardIos } from "@mui/icons-material";
 
 export default function About() {
   const images = ["/asset_2.jpeg", "/asset_8.jpeg", "/asset_9.jpeg"];
@@ -82,6 +79,7 @@ export default function About() {
                 >
                   <img
                     src={images[currentImageIndex]}
+                    alt={`slide-${images[currentImageIndex]}`}
                     width="100%"
                     height="100%"
                     className="box1"

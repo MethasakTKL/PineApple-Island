@@ -1,5 +1,4 @@
-
-import { Box,Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import Grid from "@mui/material/Grid2";
 
 export default function Offer() {
@@ -42,8 +41,9 @@ export default function Offer() {
               component="img"
               position="absolute"
               src="/asset_4.jpeg"
+              alt="garden front home"
               sx={{
-                background: "#0d204e",
+                background: "white",
                 width: 400,
                 height: 400,
                 marginLeft: 0,
@@ -72,6 +72,7 @@ export default function Offer() {
               <Box
                 component="img"
                 src="/icon_offer/fluent_tree-evergreen-20-regular.svg"
+                alt="eco friendly"
                 sx={{
                   width: "4rem",
                   height: "4rem",
@@ -92,6 +93,7 @@ export default function Offer() {
               <Box
                 component="img"
                 src="/icon_offer/ooui_network.svg"
+                alt="smart homes"
                 sx={{
                   width: "4rem",
                   height: "4rem",
@@ -112,6 +114,7 @@ export default function Offer() {
               <Box
                 component="img"
                 src="/icon_offer/ic_outline-payments.svg"
+                alt="good rates"
                 sx={{
                   width: "4rem",
                   height: "4rem",
@@ -144,6 +147,7 @@ export default function Offer() {
               <Box
                 component="img"
                 src="/icon_offer/icons8_services.svg"
+                alt="serviced apartment"
                 sx={{
                   width: "4rem",
                   height: "4rem",
@@ -164,6 +168,7 @@ export default function Offer() {
               <Box
                 component="img"
                 src="/icon_offer/bytesize_lock.svg"
+                alt="private security"
                 sx={{
                   width: "4rem",
                   height: "4rem",
@@ -184,6 +189,7 @@ export default function Offer() {
               <Box
                 component="img"
                 src="/icon_offer/emojione-monotone_light-bulb.svg"
+                alt="24/7 electricity"
                 sx={{
                   width: "4rem",
                   height: "4rem",
@@ -213,6 +219,7 @@ export default function Offer() {
               component="img"
               position="absolute"
               src="/asset_5.jpeg"
+              alt="flower garden"
               sx={{
                 background: "#0d204e",
                 width: 400,

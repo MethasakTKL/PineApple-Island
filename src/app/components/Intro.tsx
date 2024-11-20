@@ -108,6 +108,7 @@ export default function Intro() {
             >
               <img
                 src="/asset_1.jpeg"
+                alt="asset_1"
                 width="100%"
                 height="720"
                 className="box1"
