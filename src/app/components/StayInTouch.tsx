@@ -34,19 +34,23 @@ export default function StayInTouch() {
   const theme = useTheme();
   const isMd = useMediaQuery(theme.breakpoints.up("md"));
 
-  const [name, setName] = useState("");
-  const [phoneNo, setPhoneNo] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
+  const [formData, setFormData] = useState({
+    name: "",
+    phoneNo: "",
+    email: "",
+    message: "",
+  });
 
   const handleSent = () => {
-    const formData = {
-      name: name,
-      phoneNo: phoneNo,
-      email: email,
-      message: message,
-    };
     console.log(formData);
+  };
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
   };
 
   return (
@@ -83,7 +87,6 @@ export default function StayInTouch() {
             display: { xs: "block", md: "none" },
             pl: "2rem",
             pr: "2rem",
-
           }}
         >
           If you are interested in finding out more about The Discovery Village,
@@ -101,10 +104,11 @@ export default function StayInTouch() {
           <CssTextField
             id="name"
             label="Name"
-            value={name}
+            name="name"
+            value={formData.name}
             variant={isMd ? "outlined" : "standard"}
             sx={{ width: "40rem" }}
-            onChange={(e) => setName(e.target.value)}
+            onChange={handleInputChange}
           />
         </Box>
         <Box
@@ -118,11 +122,12 @@ export default function StayInTouch() {
         >
           <CssTextField
             id="phoneno"
+            name="phoneNo"
             label="Phone No"
-            value={phoneNo}
+            value={formData.phoneNo}
             variant={isMd ? "outlined" : "standard"}
             sx={{ width: "40rem" }}
-            onChange={(e) => setPhoneNo(e.target.value)}
+            onChange={handleInputChange}
           />
         </Box>
         <Box
@@ -136,11 +141,12 @@ export default function StayInTouch() {
         >
           <CssTextField
             id="email"
+            name="email"
             label="Email"
-            value={email}
+            value={formData.email}
             variant={isMd ? "outlined" : "standard"}
             sx={{ width: "40rem" }}
-            onChange={(e) => setEmail(e.target.value)}
+            onChange={handleInputChange}
           />
         </Box>
         <Box
@@ -153,16 +159,17 @@ export default function StayInTouch() {
           }}
         >
           <CssTextField
-            id="Message"
+            id="message"
+            name="message"
             label="Message"
-            value={message}
+            value={formData.message}
             multiline
             rows={6}
             variant={isMd ? "outlined" : "standard"}
             sx={{
               width: "40rem",
             }}
-            onChange={(e) => setMessage(e.target.value)}
+            onChange={handleInputChange}
           />
         </Box>
         <Box

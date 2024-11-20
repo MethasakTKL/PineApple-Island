@@ -12,7 +12,7 @@ import Reason from "./components/Reason";
 import About from "./components/About";
 import Agent from "./components/Agent";
 import Feature from "./components/Feature";
-import NavBar from "./components/Navbar";
+import NavBar from "./components/NavBar";
 
 const theme = createTheme({
   typography: {

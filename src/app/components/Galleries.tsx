@@ -1,35 +1,16 @@
 import { Box, Typography } from "@mui/material";
 import Grid from "@mui/material/Grid2";
 
-
 const itemData = [
-  {
-    img: "/galleries/galleries_1.jpeg",
-  },
-  {
-    img: "/galleries/galleries_2.jpeg",
-  },
-  {
-    img: "/galleries/galleries_3.jpeg",
-  },
-  {
-    img: "/galleries/galleries_4.jpeg",
-  },
-  {
-    img: "/galleries/galleries_5.jpeg",
-  },
-  {
-    img: "/galleries/galleries_6.jpeg",
-  },
-  {
-    img: "/galleries/galleries_7.jpeg",
-  },
-  {
-    img: "/galleries/galleries_8.jpeg",
-  },
-  {
-    img: "/galleries/galleries_9.jpeg",
-  },
+  { id: "1", img: "/galleries/galleries_1.jpeg", alt: "Gallery image 1" },
+  { id: "2", img: "/galleries/galleries_2.jpeg", alt: "Gallery image 2" },
+  { id: "3", img: "/galleries/galleries_3.jpeg", alt: "Gallery image 3" },
+  { id: "4", img: "/galleries/galleries_4.jpeg", alt: "Gallery image 4" },
+  { id: "5", img: "/galleries/galleries_5.jpeg", alt: "Gallery image 5" },
+  { id: "6", img: "/galleries/galleries_6.jpeg", alt: "Gallery image 6" },
+  { id: "7", img: "/galleries/galleries_7.jpeg", alt: "Gallery image 7" },
+  { id: "8", img: "/galleries/galleries_8.jpeg", alt: "Gallery image 8" },
+  { id: "9", img: "/galleries/galleries_9.jpeg", alt: "Gallery image 9" },
 ];
 
 export default function Galleries() {
@@ -71,11 +52,12 @@ export default function Galleries() {
               <br /> an opportunity to build a home.
             </Typography>
           </Grid>
-          {itemData.map((item, index) => (
-            <Grid key={index} size={{ xs: 12, sm: 6, md: 4 }}>
+          {itemData.map((item) => (
+            <Grid key={item.id} size={{ xs: 12, sm: 6, md: 4 }}>
               <Box>
                 <img
                   src={item.img}
+                  alt={item.alt}
                   width="100%"
                   height="400"
                   className="box1"
@@ -129,6 +111,7 @@ export default function Galleries() {
             <Box width={"100%"}>
               <img
                 src="/galleries_sx/galleries_sx1.jpeg"
+                alt="Gallery image 1"
                 width="100%"
                 height="170"
                 className="box1"
@@ -139,6 +122,7 @@ export default function Galleries() {
             <Box>
               <img
                 src="/galleries_sx/galleries_sx2.jpeg"
+                alt="Gallery image 2"
                 width="100%"
                 height="170"
                 className="box1"
@@ -149,6 +133,7 @@ export default function Galleries() {
             <Box>
               <img
                 src="/galleries_sx/galleries_sx3.jpeg"
+                alt="Gallery image 3"
                 width="100%"
                 height="170"
                 className="box1"
@@ -159,6 +144,7 @@ export default function Galleries() {
             <Box>
               <img
                 src="/galleries_sx/galleries_sx4.jpeg"
+                alt="Gallery image 4"
                 width="100%"
                 height="170"
                 className="box1"
@@ -170,6 +156,7 @@ export default function Galleries() {
               <Box>
                 <img
                   src="/galleries_sx/galleries_sx5.jpeg"
+                  alt="Gallery image 5"
                   width="100%"
                   height="170"
                   className="box1"
@@ -180,6 +167,7 @@ export default function Galleries() {
               <Box pt={0.5}>
                 <img
                   src="/galleries_sx/galleries_sx7.jpeg"
+                  alt="Gallery image 7"
                   width="100%"
                   height="170"
                   className="box1"
@@ -191,6 +179,7 @@ export default function Galleries() {
             <Box>
               <img
                 src="/galleries_sx/galleries_sx6.jpeg"
+                alt="Gallery image 6"
                 width="100%"
                 height="348"
                 className="box1"
@@ -201,6 +190,7 @@ export default function Galleries() {
             <Box>
               <img
                 src="/galleries_sx/galleries_sx8.jpeg"
+                alt= "Gallery image 8"
                 width="100%"
                 height="348"
                 className="box1"
@@ -211,6 +201,7 @@ export default function Galleries() {
             <Box>
               <img
                 src="/galleries_sx/galleries_sx9.jpeg"
+                alt= "Gallery image 9"
                 width="100%"
                 height="170"
                 className="box1"
@@ -219,6 +210,7 @@ export default function Galleries() {
             <Box pt={0.5}>
               <img
                 src="/galleries_sx/galleries_sx10.jpeg"
+                alt= "Gallery image 10"
                 width="100%"
                 height="170"
                 className="box1"
@@ -229,6 +221,7 @@ export default function Galleries() {
             <Box>
               <img
                 src="/galleries_sx/galleries_sx11.jpeg"
+                alt= "Gallery image 11"
                 width="100%"
                 height="170"
                 className="box1"
@@ -239,6 +232,7 @@ export default function Galleries() {
             <Box>
               <img
                 src="/galleries_sx/galleries_sx12.jpeg"
+                alt= "Gallery image 12"
                 width="100%"
                 height="170"
                 className="box1"
@@ -249,6 +243,7 @@ export default function Galleries() {
             <Box>
               <img
                 src="/galleries_sx/galleries_sx13.jpeg"
+                alt= "Gallery image 13"
                 width="100%"
                 height="170"
                 className="box1"
