@@ -1,6 +1,7 @@
 "use client";
 import { Box, createTheme, ThemeProvider } from "@mui/material";
 import Grid from "@mui/material/Grid2";
+import { Manrope, Lato, Playfair_Display, Poppins } from "next/font/google";
 
 //import components
 import Intro from "./components/Intro";
@@ -14,14 +15,36 @@ import Agent from "./components/Agent";
 import Feature from "./components/Feature";
 import NavBar from "./components/NavBar";
 
+const manrope = Manrope({
+  weight: ["400", "700"],
+  style: ["normal"],
+  subsets: ["latin"],
+});
+
+const lato = Lato({
+  weight: ["100", "300", "400", "700", "900"],
+  style: ["normal"],
+  subsets: ["latin"],
+});
+const playfairDisplay = Playfair_Display({
+  weight: ["400", "600", "700"],
+  style: ["normal"],
+  subsets: ["latin"],
+});
+const poppins = Poppins({
+  weight: ["100", "300", "400", "700", "900"],
+  style: ["normal"],
+
+  subsets: ["latin"],
+});
+
 const theme = createTheme({
   typography: {
     fontFamily: [
-      "Playfair_Display",
-      "Manrope",
-      "Lato",
-      "Roboto",
-      "Poppins",
+      manrope.style.fontFamily,
+      lato.style.fontFamily,
+      playfairDisplay.style.fontFamily,
+      poppins.style.fontFamily,
     ].join(","),
   },
 });
