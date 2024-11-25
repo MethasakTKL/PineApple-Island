@@ -31,7 +31,7 @@ export default function NavBar() {
       <AppBar
         position="fixed"
         elevation={0}
-        sx={{ background: "white", height: "auto", maxHeight: "100px" }}
+        sx={{ background: "white", height: "auto",}}
       >
         <Toolbar
           sx={{
@@ -40,6 +40,7 @@ export default function NavBar() {
             alignItems: "center",
             marginLeft: { md: "1rem", lg: "2rem" },
             marginRight: { md: "1rem", lg: "2rem" },
+            height: "100px",
           }}
         >
           <Box
