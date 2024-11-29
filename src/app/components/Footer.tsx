@@ -36,15 +36,25 @@ export default function Footer() {
           justifyContent: "center",
         }}
       >
-        <Grid container spacing={2} sx={{ pt: "8rem" }}>
+        <Grid container spacing={2} sx={{ pt: "7rem" }}>
           <Grid>
             <Stack width={"400px"}>
               <Typography
-                sx={{ color: "white", fontSize: 30, fontFamily: "Manrope" }}
+                sx={{ color: "white", fontSize: 35, fontFamily: "Manrope" }}
               >
-                Banana Island
+                Banana
+                <br />
+                Island
               </Typography>
-              <Typography sx={{ color: "white", fontFamily: "Manrope" }}>
+              <Typography
+                sx={{
+                  color: "white",
+                  fontFamily: "Manrope",
+                  fontWeight: 200,
+                  width: "16rem",
+                  mt: "0.5rem",
+                }}
+              >
                 a community that gives you a taste of happiness, a place you’ll
                 love to live and an opportunity to build a home.
               </Typography>
@@ -114,7 +124,9 @@ export default function Footer() {
                   fontFamily: "Manrope",
                 }}
               >
-                Pineapple Island
+                Pineapple
+                <br />
+                Island
               </Typography>
               <Typography
                 sx={{

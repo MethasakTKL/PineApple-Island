@@ -16,7 +16,7 @@ import Feature from "./components/Feature";
 import NavBar from "./components/NavBar";
 
 const manrope = Manrope({
-  weight: ["400", "700"],
+  weight: ["200", "300", "400","500","600", "700", "800"],
   style: ["normal"],
   subsets: ["latin"],
 });
