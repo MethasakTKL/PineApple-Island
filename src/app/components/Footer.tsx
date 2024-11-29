@@ -40,7 +40,7 @@ export default function Footer() {
           <Grid>
             <Stack width={"400px"}>
               <Typography
-                sx={{ color: "white", fontSize: 35, fontFamily: "Manrope" }}
+                sx={{ color: "white", fontSize: 35, fontFamily: "Manrope",fontWeight:400}}
               >
                 Banana
                 <br />
@@ -65,13 +65,22 @@ export default function Footer() {
               <Typography
                 sx={{
                   color: "white",
-                  fontSize: 30,
+                  fontSize: "17pt",
                   fontFamily: "Playfair Display",
+                  mt:"2.5rem"
                 }}
               >
                 Follow up
               </Typography>
-              <Typography sx={{ color: "white", fontFamily: "Manrope" }}>
+              <Typography
+                sx={{
+                  color: "white",
+                  fontFamily: "Manrope",
+                  fontWeight: 200,
+                  width: "16rem",
+                  mt: "0.5rem",
+                }}
+              >
                 Keep up with our newsletter to get updates about projects and
                 offers
               </Typography>
@@ -92,7 +101,8 @@ export default function Footer() {
                   }
                   sx={{
                     background: "white",
-                    width: 300,
+                    width: 330,
+                    height:40,
                     marginTop: 2,
                     borderRadius: 0,
                   }}
