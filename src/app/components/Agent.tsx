@@ -129,7 +129,7 @@ export default function Agent() {
               sx={{
                 color: "white",
                 fontSize: "22pt",
-                fontWeight: 300,
+                fontWeight: 600,
                 fontFamily: "Playfair Display",
                 pb: "1rem",
               }}
