@@ -10,22 +10,31 @@ import {
 import { useState } from "react";
 
 const CssTextField = styled(TextField)({
+  "& label": {
+    color: "black",
+  },
   "& label.Mui-focused": {
-    color: "#A0AAB4",
+    color: "black",
   },
   "& .MuiInput-underline:after": {
     borderBottomColor: "#B2BAC2",
   },
+
   "& .MuiOutlinedInput-root": {
     "& fieldset": {
-      borderColor: "#E0E3E7",
+      borderColor: "#2d2b2b",
+      borderWidth: "1.25px",
       borderRadius: 0,
     },
     "&:hover fieldset": {
       borderColor: "#B2BAC2",
+      borderWidth: "1.25px",
+      borderRadius: 0,
     },
     "&.Mui-focused fieldset": {
       borderColor: "#6F7E8C",
+      borderWidth: "1.25px",
+      borderRadius: 0,
     },
   },
 });
