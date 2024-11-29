@@ -13,3 +13,10 @@
 html {
   scroll-behavior: smooth;
 }
+
+@font-face {
+  font-family: "Gotham";
+  src: url("/Gotham-Light.otf") format("opentype");
+  font-weight: 100; 
+  font-style: normal;
+}
