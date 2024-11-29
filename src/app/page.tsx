@@ -2,7 +2,6 @@
 import { Box, createTheme, ThemeProvider } from "@mui/material";
 import Grid from "@mui/material/Grid2";
 import { Manrope, Lato, Playfair_Display, Poppins } from "next/font/google";
-
 //import components
 import Intro from "./components/Intro";
 import StayInTouch from "./components/StayInTouch";
@@ -16,7 +15,7 @@ import Feature from "./components/Feature";
 import NavBar from "./components/NavBar";
 
 const manrope = Manrope({
-  weight: ["200", "300", "400","500","600", "700", "800"],
+  weight: ["200", "300", "400", "500", "600", "700", "800"],
   style: ["normal"],
   subsets: ["latin"],
 });
@@ -27,14 +26,13 @@ const lato = Lato({
   subsets: ["latin"],
 });
 const playfairDisplay = Playfair_Display({
-  weight: ["400", "600", "700"],
+  weight: ["400", "500", "600", "700", "800"],
   style: ["normal"],
   subsets: ["latin"],
 });
 const poppins = Poppins({
   weight: ["100", "300", "400", "700", "900"],
   style: ["normal"],
-
   subsets: ["latin"],
 });
 

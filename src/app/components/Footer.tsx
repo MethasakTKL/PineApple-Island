@@ -40,7 +40,12 @@ export default function Footer() {
           <Grid>
             <Stack width={"400px"}>
               <Typography
-                sx={{ color: "white", fontSize: 35, fontFamily: "Manrope",fontWeight:400}}
+                sx={{
+                  color: "white",
+                  fontSize: 37,
+                  fontFamily: "Manrope",
+                  fontWeight: 400,
+                }}
               >
                 Banana
                 <br />
@@ -65,9 +70,10 @@ export default function Footer() {
               <Typography
                 sx={{
                   color: "white",
-                  fontSize: "17pt",
+                  fontSize: "15pt",
                   fontFamily: "Playfair Display",
-                  mt:"2.5rem"
+                  fontWeight:400,
+                  mt: "2.5rem",
                 }}
               >
                 Follow up
@@ -93,7 +99,14 @@ export default function Footer() {
                   endAdornment={
                     <InputAdornment position="end">
                       <Button onClick={handleSubscribe}>
-                        <Typography sx={{ fontSize: "10pt", color: "grey" }}>
+                        <Typography
+                          sx={{
+                            fontFamily: "Gotham",
+                            fontSize: "10pt",
+                            color: "#0E204E",
+                            textTransform: "none",
+                          }}
+                        >
                           Subscribe
                         </Typography>
                       </Button>
@@ -102,9 +115,17 @@ export default function Footer() {
                   sx={{
                     background: "white",
                     width: 330,
-                    height:40,
+                    height: 40,
                     marginTop: 2,
                     borderRadius: 0,
+                    fontFamily: "Gotham",
+                  }}
+                  inputProps={{
+                    style: {
+                      fontFamily: "Gotham",
+                      fontSize: "12pt",
+                      color: "#666666",
+                    },
                   }}
                 />
               </FormControl>
