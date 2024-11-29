@@ -91,7 +91,9 @@ export default function StayInTouch() {
         <Typography
           sx={{
             textAlign: "center",
-            fontFamily: "Manrope",
+            fontFamily: "Lato",
+            fontSize:"15pt",
+            fontWeight:300,
             pt: 3,
             display: { xs: "block", md: "none" },
             pl: "2rem",
@@ -106,8 +108,8 @@ export default function StayInTouch() {
             display: "flex",
             justifyContent: "center",
             pt: "2rem",
-            mr: "2rem",
-            ml: "2rem",
+            mr: "4rem",
+            ml: "4rem",
           }}
         >
           <CssTextField
@@ -125,8 +127,8 @@ export default function StayInTouch() {
             display: "flex",
             justifyContent: "center",
             pt: "2rem",
-            mr: "2rem",
-            ml: "2rem",
+            mr: "4rem",
+            ml: "4rem",
           }}
         >
           <CssTextField
@@ -144,8 +146,8 @@ export default function StayInTouch() {
             display: "flex",
             justifyContent: "center",
             pt: "2rem",
-            mr: "2rem",
-            ml: "2rem",
+            mr: "4rem",
+            ml: "4rem",
           }}
         >
           <CssTextField
@@ -163,8 +165,8 @@ export default function StayInTouch() {
             display: "flex",
             justifyContent: "center",
             pt: "2rem",
-            mr: "2rem",
-            ml: "2rem",
+            mr: "4rem",
+            ml: "4rem",
           }}
         >
           <CssTextField
@@ -193,12 +195,14 @@ export default function StayInTouch() {
             sx={{
               color: "white",
               background: "#121f4b",
-              width: "8rem",
-              borderRadius: 0,
+              width: "6.5rem",
+              height:"3.25rem"
             }}
             onClick={handleSent}
           >
-            send
+            <Typography sx={{fontSize:"15pt",textTransform:"none"}}>
+              Send
+            </Typography>
           </Button>
         </Box>
       </Box>

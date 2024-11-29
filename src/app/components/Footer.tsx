@@ -72,7 +72,7 @@ export default function Footer() {
                   color: "white",
                   fontSize: "15pt",
                   fontFamily: "Playfair Display",
-                  fontWeight:400,
+                  fontWeight: 400,
                   mt: "2.5rem",
                 }}
               >
@@ -155,9 +155,7 @@ export default function Footer() {
                   fontFamily: "Manrope",
                 }}
               >
-                Pineapple
-                <br />
-                Island
+                Pineapple Island
               </Typography>
               <Typography
                 sx={{
