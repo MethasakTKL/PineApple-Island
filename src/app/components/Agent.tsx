@@ -150,11 +150,11 @@ export default function Agent() {
                 <Typography
                   sx={{
                     color: "white",
-                    fontSize: "13pt",
+                    fontSize: "15pt",
                     fontWeight: 200,
                     fontFamily: "Lato",
-                    marginLeft: "3rem",
-                    marginRight: "3rem",
+                    marginLeft: "2rem",
+                    marginRight: "2rem",
                   }}
                 >
                   A community that gives you a taste of happiness, a place
@@ -165,13 +165,14 @@ export default function Agent() {
             <Grid size={12}>
               <Button
                 variant="contained"
-                sx={{ background: "white", mt: "1rem", mb: "1rem" }}
+                sx={{ background: "white", mt: "1.5rem", mb: "1rem" ,height:"50px"}}
               >
                 <Typography
                   sx={{
                     fontFamily: "Lato",
                     color: "#0d204e",
                     textTransform: "none",
+                    fontSize:"15pt"
                   }}
                 >
                   Join Now
