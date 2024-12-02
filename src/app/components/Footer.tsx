@@ -157,16 +157,27 @@ export default function Footer() {
               >
                 Pineapple Island
               </Typography>
-              <Typography
+              <Box
                 sx={{
-                  color: "white",
-                  fontSize: 13,
-                  fontWeight: 100,
-                  fontFamily: "Manrope",
+                  // background: "yellow",
+                  display: "flex",
+                  justifyContent: "center",
+                  gap:0.5,
+                  mt:"0.5rem"
                 }}
               >
-                &#169; Copyright 2021 Glowdsgn All Rights Reserved
-              </Typography>
+                <img src="/emojione_copyright.svg" alt="copyright" width={20} />
+                <Typography
+                  sx={{
+                    color: "white",
+                    fontSize: 13,
+                    fontWeight: 100,
+                    fontFamily: "Gotham-thin",
+                  }}
+                >
+                  Copyright2021 Glowdsgn All Rights Reserved
+                </Typography>
+              </Box>
             </Stack>
           </Grid>
         </Grid>
