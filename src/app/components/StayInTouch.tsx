@@ -24,22 +24,47 @@ const CssTextField = styled(TextField)({
   "& .MuiOutlinedInput-root": {
     "& fieldset": {
       borderColor: "#2d2b2b",
-      borderWidth: "1.15px",
+      borderWidth: "1.25px",
       borderRadius: 0,
     },
     "&:hover fieldset": {
       borderColor: "#B2BAC2",
-      borderWidth: "1.15px",
+      borderWidth: "1.25px",
       borderRadius: 0,
     },
     "&.Mui-focused fieldset": {
       borderColor: "#6F7E8C",
-      borderWidth: "1.15px",
+      borderWidth: "1.25px",
       borderRadius: 0,
     },
   },
 });
+const MessageTextField = styled(TextField)({
+  "& label": {
+    color: "#2d2b2b",
+  },
+  "& label.Mui-focused": {
+    color: "#2d2b2b",
+  },
+  "& .MuiInput-underline:after": {
+    borderBottomColor: "#b3bac2",
+  },
 
+  "& .MuiOutlinedInput-root": {
+    "& fieldset": {
+      borderColor: "#949494",
+      borderRadius: 0,
+    },
+    "&:hover fieldset": {
+      borderColor: "#b3bac2",
+      borderRadius: 0,
+    },
+    "&.Mui-focused fieldset": {
+      borderColor: "#b3bac2",
+      borderRadius: 0,
+    },
+  },
+});
 export default function StayInTouch() {
   const theme = useTheme();
   const isMd = useMediaQuery(theme.breakpoints.up("md"));
@@ -97,8 +122,9 @@ export default function StayInTouch() {
             fontWeight: 300,
             pt: 3,
             display: { xs: "block", md: "none" },
-            pl: "2rem",
-            pr: "2rem",
+            pl: "1rem",
+            pr: "1rem",
+            color: "#424242",
           }}
         >
           If you are interested in finding out more about The Discovery Village,
@@ -108,9 +134,9 @@ export default function StayInTouch() {
           sx={{
             display: "flex",
             justifyContent: "center",
-            pt: "2rem",
-            mr: "4rem",
-            ml: "4rem",
+            pt: { xs: "1rem", md: "2.5rem" },
+            mr: { xs: "3rem", md: "4rem" },
+            ml: { xs: "3rem", md: "4rem" },
           }}
         >
           <CssTextField
@@ -118,6 +144,7 @@ export default function StayInTouch() {
             label={
               <Typography
                 sx={{
+                  fontSize: "13pt",
                   fontFamily: isMd ? "Manrope" : "Lato",
                   fontWeight: isMd ? 400 : 300,
                   color: isMd ? "black" : "#666666",
@@ -137,9 +164,9 @@ export default function StayInTouch() {
           sx={{
             display: "flex",
             justifyContent: "center",
-            pt: "2rem",
-            mr: "4rem",
-            ml: "4rem",
+            pt: { xs: "1rem", md: "2.5rem" },
+            mr: { xs: "3rem", md: "4rem" },
+            ml: { xs: "3rem", md: "4rem" },
           }}
         >
           <CssTextField
@@ -148,6 +175,7 @@ export default function StayInTouch() {
             label={
               <Typography
                 sx={{
+                  fontSize: "13pt",
                   fontFamily: isMd ? "Manrope" : "Lato",
                   fontWeight: isMd ? 400 : 300,
                   color: isMd ? "black" : "#666666",
@@ -166,9 +194,9 @@ export default function StayInTouch() {
           sx={{
             display: "flex",
             justifyContent: "center",
-            pt: "2rem",
-            mr: "4rem",
-            ml: "4rem",
+            pt: { xs: "1rem", md: "2.5rem" },
+            mr: { xs: "3rem", md: "4rem" },
+            ml: { xs: "3rem", md: "4rem" },
           }}
         >
           <CssTextField
@@ -177,6 +205,7 @@ export default function StayInTouch() {
             label={
               <Typography
                 sx={{
+                  fontSize: "13pt",
                   fontFamily: isMd ? "Manrope" : "Lato",
                   fontWeight: isMd ? 400 : 300,
                   color: isMd ? "black" : "#666666",
@@ -195,7 +224,7 @@ export default function StayInTouch() {
           sx={{
             display: { xs: "none", md: "flex" },
             justifyContent: "center",
-            pt: { xs: "1rem", md: "2rem" },
+            pt: { xs: "1rem", md: "2.5rem" },
             mr: "4rem",
             ml: "4rem",
           }}
@@ -228,9 +257,9 @@ export default function StayInTouch() {
           sx={{
             display: { xs: "flex", md: "none" },
             justifyContent: "center",
-            pt: { xs: "1rem", md: "2rem" },
-            mr: "4rem",
-            ml: "4rem",
+            pt: { xs: "1rem", md: "2.5rem" },
+            mr: { xs: "3rem", md: "4rem" },
+            ml: { xs: "3rem", md: "4rem" },
           }}
         >
           <Stack
@@ -238,16 +267,25 @@ export default function StayInTouch() {
               width: "40rem",
             }}
           >
-            <Typography sx={{ fontFamily: "Lato", fontWeight: 300,color:"#666666", pb: 1 }}>
+            <Typography
+              sx={{
+                fontSize: "13pt",
+                fontFamily: "Lato",
+                fontWeight: 300,
+                color: "#666666",
+                pb: 1,
+                mt: "1rem",
+              }}
+            >
               Message
             </Typography>
-            <CssTextField
+            <MessageTextField
               id="message"
               name="message"
               label=""
               value={formData.message}
               multiline
-              rows={6}
+              rows={4}
               variant="outlined"
               sx={{
                 width: "100%",
@@ -260,7 +298,7 @@ export default function StayInTouch() {
           sx={{
             display: "flex",
             justifyContent: "center",
-            pt: "2rem",
+            pt: "1.5rem",
           }}
         >
           <Button
