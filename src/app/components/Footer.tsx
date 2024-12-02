@@ -152,7 +152,7 @@ export default function Footer() {
                   color: "white",
                   fontSize: 22,
                   fontWeight: 400,
-                  fontFamily: "Manrope",
+                  fontFamily: "Lato",
                 }}
               >
                 Pineapple Island
@@ -166,7 +166,7 @@ export default function Footer() {
                   mt:"0.5rem"
                 }}
               >
-                <img src="/emojione_copyright.svg" alt="copyright" width={20} />
+                <img src="/emojione_copyright.svg" alt="copyright" width={22} />
                 <Typography
                   sx={{
                     color: "white",
