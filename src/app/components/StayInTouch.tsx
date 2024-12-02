@@ -6,15 +6,16 @@ import {
   TextField,
   useMediaQuery,
   useTheme,
+  Stack,
 } from "@mui/material";
 import { useState } from "react";
 
 const CssTextField = styled(TextField)({
   "& label": {
-    color: "black",
+    color: "#2d2b2b",
   },
   "& label.Mui-focused": {
-    color: "black",
+    color: "#2d2b2b",
   },
   "& .MuiInput-underline:after": {
     borderBottomColor: "#B2BAC2",
@@ -23,17 +24,17 @@ const CssTextField = styled(TextField)({
   "& .MuiOutlinedInput-root": {
     "& fieldset": {
       borderColor: "#2d2b2b",
-      borderWidth: "1.25px",
+      borderWidth: "1.15px",
       borderRadius: 0,
     },
     "&:hover fieldset": {
       borderColor: "#B2BAC2",
-      borderWidth: "1.25px",
+      borderWidth: "1.15px",
       borderRadius: 0,
     },
     "&.Mui-focused fieldset": {
       borderColor: "#6F7E8C",
-      borderWidth: "1.25px",
+      borderWidth: "1.15px",
       borderRadius: 0,
     },
   },
@@ -92,8 +93,8 @@ export default function StayInTouch() {
           sx={{
             textAlign: "center",
             fontFamily: "Lato",
-            fontSize:"15pt",
-            fontWeight:300,
+            fontSize: "15pt",
+            fontWeight: 300,
             pt: 3,
             display: { xs: "block", md: "none" },
             pl: "2rem",
@@ -114,7 +115,17 @@ export default function StayInTouch() {
         >
           <CssTextField
             id="name"
-            label="Name"
+            label={
+              <Typography
+                sx={{
+                  fontFamily: isMd ? "Manrope" : "Lato",
+                  fontWeight: isMd ? 400 : 300,
+                  color: isMd ? "black" : "#666666",
+                }}
+              >
+                Name
+              </Typography>
+            }
             name="name"
             value={formData.name}
             variant={isMd ? "outlined" : "standard"}
@@ -134,7 +145,17 @@ export default function StayInTouch() {
           <CssTextField
             id="phoneno"
             name="phoneNo"
-            label="Phone No"
+            label={
+              <Typography
+                sx={{
+                  fontFamily: isMd ? "Manrope" : "Lato",
+                  fontWeight: isMd ? 400 : 300,
+                  color: isMd ? "black" : "#666666",
+                }}
+              >
+                Phone No
+              </Typography>
+            }
             value={formData.phoneNo}
             variant={isMd ? "outlined" : "standard"}
             sx={{ width: "40rem" }}
@@ -153,7 +174,17 @@ export default function StayInTouch() {
           <CssTextField
             id="email"
             name="email"
-            label="Email"
+            label={
+              <Typography
+                sx={{
+                  fontFamily: isMd ? "Manrope" : "Lato",
+                  fontWeight: isMd ? 400 : 300,
+                  color: isMd ? "black" : "#666666",
+                }}
+              >
+                Email
+              </Typography>
+            }
             value={formData.email}
             variant={isMd ? "outlined" : "standard"}
             sx={{ width: "40rem" }}
@@ -162,9 +193,9 @@ export default function StayInTouch() {
         </Box>
         <Box
           sx={{
-            display: "flex",
+            display: { xs: "none", md: "flex" },
             justifyContent: "center",
-            pt: "2rem",
+            pt: { xs: "1rem", md: "2rem" },
             mr: "4rem",
             ml: "4rem",
           }}
@@ -172,16 +203,58 @@ export default function StayInTouch() {
           <CssTextField
             id="message"
             name="message"
-            label="Message"
+            label={
+              <Typography
+                sx={{
+                  fontFamily: isMd ? "Manrope" : "Lato",
+                  fontWeight: isMd ? 400 : 300,
+                  color: isMd ? "black" : "#666666",
+                }}
+              >
+                Message
+              </Typography>
+            }
             value={formData.message}
             multiline
             rows={6}
-            variant={isMd ? "outlined" : "standard"}
+            variant="outlined"
             sx={{
               width: "40rem",
             }}
             onChange={handleInputChange}
           />
+        </Box>
+        <Box
+          sx={{
+            display: { xs: "flex", md: "none" },
+            justifyContent: "center",
+            pt: { xs: "1rem", md: "2rem" },
+            mr: "4rem",
+            ml: "4rem",
+          }}
+        >
+          <Stack
+            sx={{
+              width: "40rem",
+            }}
+          >
+            <Typography sx={{ fontFamily: "Lato", fontWeight: 300,color:"#666666", pb: 1 }}>
+              Message
+            </Typography>
+            <CssTextField
+              id="message"
+              name="message"
+              label=""
+              value={formData.message}
+              multiline
+              rows={6}
+              variant="outlined"
+              sx={{
+                width: "100%",
+              }}
+              onChange={handleInputChange}
+            />
+          </Stack>
         </Box>
         <Box
           sx={{
@@ -196,11 +269,11 @@ export default function StayInTouch() {
               color: "white",
               background: "#121f4b",
               width: "6.5rem",
-              height:"3.25rem"
+              height: "3.25rem",
             }}
             onClick={handleSent}
           >
-            <Typography sx={{fontSize:"15pt",textTransform:"none"}}>
+            <Typography sx={{ fontSize: "15pt", textTransform: "none" }}>
               Send
             </Typography>
           </Button>
